@@ -24,3 +24,13 @@
   src: url("/fonts/Konsolev1.1TRIAL-Regular.woff2");
 }
 
+
+@layer components {
+  /* .btn-orange {
+    @apply bg-custom-button font-ttCommonProMedium font-semibold tracking-[0.8px] text-btn-text hover:bg-btn-hover;
+  } */
+  .main-container{
+    @apply w-full max-w-[1000px]
+  }
+  /* ... */
+}

@@ -19,6 +19,9 @@ export default {
         'custom-heading':'#222020',
         'custom-blue':'#1D71B8',
 
+      },
+      backgroundImage:{
+          'hero-section' : "linear-gradient(114.13deg, #2FBEC2 -5.35%, #2E82A3 22.85%, #301065 89.65%)",
       }
     },
   },

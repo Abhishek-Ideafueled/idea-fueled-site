@@ -3,9 +3,9 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
   return (
-    <div className="h-[73px] w-full fixed py-2 px-20">
-      <div className="flex justify-between w-full max-w-[1280px]">
-        <div className="">
+    <div className="h-[73px] w-full fixed top-0 py-2 px-20 z-20 bg-white">
+      <div className="flex  justify-between w-full max-w-[1280px] mx-auto">
+        <div className="cursor-pointer">
           <svg
             width="130"
             height="46"
@@ -77,25 +77,25 @@ const Header = () => {
         </div>
         <div className="flex gap-6 items-center h-[47px]">
             <div className="flex gap-8 items-center font-narwaSemiBold text-base ">
-                <span className="flex gap-2 items-center">
+                <span className="flex gap-2 items-center cursor-pointer">
                     Services
                     <span>
                     <IoIosArrowDown />
                     </span>
                 </span>
-                <span>
+                <span className="cursor-pointer">
                     Projects
                 </span>
-                <span>
+                <span className="cursor-pointer">
                     Process
                 </span>
-                <span className="flex gap-2 items-center">
+                <span className="flex gap-2 items-center cursor-pointer">
                     <p>Company</p>
                     <span>
                     <IoIosArrowDown />
                     </span>
                 </span>
-                <span>
+                <span className="cursor-pointer">
                     Blog
                 </span>
             </div>
