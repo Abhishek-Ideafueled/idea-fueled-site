@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Narwa-Bold";
+  src: url("/fonts/Narwa-BoldTRIAL.otf");
+}
+
+@font-face {
+  font-family: "Narwa-SemiBold";
+  src: url("/fonts/Narwa-SemiBoldTRIAL.otf");
+}
+
+@font-face {
+  font-family: "Konsole-Regular";
+  src: url("/fonts/Konsolev1.1TRIAL-Regular.woff");
+}
+
+@font-face {
+  font-family: "Konsole-Regular2";
+  src: url("/fonts/Konsolev1.1TRIAL-Regular.woff2");
+}
+
