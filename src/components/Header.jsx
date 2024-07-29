@@ -138,7 +138,7 @@ const Header = () => {
         </div>
         <div className="flex gap-6 items-center h-full">
             <div className="flex gap-8 items-center font-narwaSemiBold text-base ">
-                <div className="relative" onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false)} ref={dropDownRef}>
+                <div className="relative h-[73px] flex" onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false)} ref={dropDownRef}>
                 <span className="flex gap-2 items-center cursor-pointer">
                     <span className="button-texts"> Services</span>
                     <span className="button-texts hidden "> Services</span>
@@ -146,11 +146,11 @@ const Header = () => {
                     <IoIosArrowDown className="arrow_icon" />
                     </span>
                 </span>
-                </div>
-             {showDropdown
+                {showDropdown
               &&
+              <div className="absolute top-[55px] inset-0 left-[-400px] w-[1000px] h-[329px] bg-transparent">
                  <div 
-                 className="absolute top-[80px] mx-20 inset-0 max-w-[1280px] h-[329px] px-12 py-8 rounded-2xl bg-white">
+                 className="h-full w-full mt-6 px-12 py-8 rounded-2xl bg-white">
                     <div className="grid grid-cols-4 gap-6">
                        {data.map((item)=>
                        <div key={item.id} className="bg-[#F8FAFB] rounded-2xl flex flex-col gap-[20px] p-6">
@@ -162,23 +162,27 @@ const Header = () => {
                        </div>
                    </div>) }
                     </div>
+                </div>
                 </div>}
+                </div>
+             
                 <span className="cursor-pointer">
                     Projects
                 </span>
                 <span className="cursor-pointer">
                     Process
                 </span>
-                <div className="flex bg-transparent h-[100px]" onMouseEnter={()=>setShowCompany(true)} onMouseLeave={()=>setShowCompany(false)}>
+                <div className="flex bg-transparent h-[73px]" onMouseEnter={()=>setShowCompany(true)} onMouseLeave={()=>setShowCompany(false)}>
                 <span className="flex gap-2 items-center cursor-pointer relative" > 
                     <p>Company</p>
                     <span>
                     <IoIosArrowDown  className="arrow_icon" />
                     </span>
                     { showCompany && 
+                    <div className="absolute right-0 inset-0 top-[70px] h-[114px] w-[250px] bg-transparent">
                     <div
                     // ref={companyRef}
-                    className="absolute right-0 inset-0 top-[90px] h-[114px] w-[250px] flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm">
+                    className="mt-2 h-full flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm">
                     <span to="#" className="flex items-center justify-between hover:text-blue-400 " >
                         About us 
                         <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
@@ -187,6 +191,7 @@ const Header = () => {
                         Career 
                          <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
                         </span>
+                </div>
                 </div>}
                 </span>
                 </div>
