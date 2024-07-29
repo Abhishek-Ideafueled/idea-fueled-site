@@ -1,0 +1,34 @@
+.bg-hero-section{
+    
+    width:100%;
+    height:100vh;
+    background: linear-gradient(136deg, #2da6cc, #2e82a3, #301065);
+    background-size: 600% 600%;
+    -webkit-animation: gradientAnimation 16s ease infinite;
+    -moz-animation: gradientAnimation 16s ease infinite;
+    -o-animation: gradientAnimation 16s ease infinite;
+    animation: gradientAnimation 16s ease infinite;
+}
+ 
+/* linear-gradient(114.13deg, #2FBEC2 -5.35%, #2E82A3 22.85%, #301065 89.65%) */
+ 
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+@keyframes gradientAnimation {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
