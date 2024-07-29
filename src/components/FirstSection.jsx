@@ -1,7 +1,4 @@
-import { HiOutlineArrowUpRight } from "react-icons/hi2";
-import { PiArrowUpRightBold } from "react-icons/pi";
-import { TbArrowUpRight } from "react-icons/tb";
-
+import { FiArrowUpRight } from "react-icons/fi";
 
 const FirstSection = () => {
   return (
@@ -23,11 +20,11 @@ const FirstSection = () => {
         <div className="flex justify-center items-center gap-4">
             <button className="flex items-center gap-2 bg-[#FFED00] hover:bg-transparent hover:border-[1.5px] border-[#FFED00]  hover:text-[#FFED00] rounded-lg w-[171px] h-[48px] justify-center  text-custom-heading font-konsoleRegular font-semibold transition-colors duration-150 delay-75">
                 <span>Book a Call</span>
-                <span><PiArrowUpRightBold /></span>
+                <span><FiArrowUpRight  size={20}/></span>
             </button>
             <button className="flex items-center gap-2 bg-transparent rounded-lg w-[171px] h-[48px] justify-center border-[1.5px] hover:bg-[#FFED00] hover:text-custom-heading border-[#FFED00]  text-[#FFED00] font-konsoleRegular font-semibold transition-colors duration-150 delay-75" >
             <span>Email Us</span>
-            <span><PiArrowUpRightBold /></span>
+            <span><FiArrowUpRight  size={20}/></span>
             </button>
         </div>
       </div>

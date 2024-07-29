@@ -1,10 +1,71 @@
 import { IoIosArrowDown } from "react-icons/io";
-
+import './Header.css';
+import { useEffect, useRef, useState } from "react";
+import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
+// import { Link } from 'react-router-dom';
 
 const Header = () => {
+
+    const [showDropdown,setShowDropdown] = useState(false);
+    const [showCompany,setShowCompany] = useState(false);
+
+    const data =[
+        {
+            id:1,
+            heading:"Digital advisory",
+            body:"In publishing and graphic design Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts."
+        },
+        {
+            id:2,
+            heading:"Design",
+            body:"In publishing and graphic design Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts."
+        },
+        {
+            id:3,
+            heading:"Development",
+            body:"In publishing and graphic design Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts."
+        },
+        {
+            id:4,
+            heading:"Marketing",
+            body:"In publishing and graphic design Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts."
+        }
+
+    ]
+
+    const dropDownRef = useRef();
+    const companyRef = useRef()
+
+    useEffect(()=>{
+      document.addEventListener('mousedown',handleClickOutside);
+  
+      return ()=>{
+        document.removeEventListener('mousedown',handleClickOutside)
+      }
+    },[showDropdown])
+  
+  
+    const handleClickOutside=(event)=>{
+      if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
+  
+       setShowDropdown(false);
+  
+      }
+    //   if (companyRef.current && !companyRef.current.contains(event.target)) {
+  
+    //     setShowCompany(false);
+   
+    //    }
+    }
+    
+    const handleCompany=()=>{
+        setShowCompany(!showCompany);
+    }
+
   return (
-    <div className="h-[73px] w-full fixed top-0 py-2 px-20 z-20 bg-white">
-      <div className="flex  justify-between w-full max-w-[1280px] mx-auto">
+    <div className="h-[73px] w-full fixed top-0 px-20 z-20 bg-white flex items-center">
+      <div className="flex  justify-between items-center w-full max-w-[1280px] mx-auto">
         <div className="cursor-pointer">
           <svg
             width="130"
@@ -75,26 +136,61 @@ const Header = () => {
             />
           </svg>
         </div>
-        <div className="flex gap-6 items-center h-[47px]">
+        <div className="flex gap-6 items-center h-full">
             <div className="flex gap-8 items-center font-narwaSemiBold text-base ">
+                <div className="relative" onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false)} ref={dropDownRef}>
                 <span className="flex gap-2 items-center cursor-pointer">
-                    Services
+                    <span className="button-texts"> Services</span>
+                    <span className="button-texts hidden "> Services</span>
                     <span>
-                    <IoIosArrowDown />
+                    <IoIosArrowDown className="arrow_icon" />
                     </span>
                 </span>
+                </div>
+             {showDropdown
+              &&
+                 <div 
+                 className="absolute top-[80px] mx-20 inset-0 max-w-[1280px] h-[329px] px-12 py-8 rounded-2xl bg-white">
+                    <div className="grid grid-cols-4 gap-6">
+                       {data.map((item)=>
+                       <div key={item.id} className="bg-[#F8FAFB] rounded-2xl flex flex-col gap-[20px] p-6">
+                       <div className="font-narwaBold text-custom-heading text-2xl font-bold leading-[30px]">
+                            {item.heading}
+                       </div>
+                       <div className="text-custom-body font-konsoleRegular text-sm ">
+                            {item.body}
+                       </div>
+                   </div>) }
+                    </div>
+                </div>}
                 <span className="cursor-pointer">
                     Projects
                 </span>
                 <span className="cursor-pointer">
                     Process
                 </span>
-                <span className="flex gap-2 items-center cursor-pointer">
+                <div className="flex bg-transparent h-[100px]" onMouseEnter={()=>setShowCompany(true)} onMouseLeave={()=>setShowCompany(false)}>
+                <span className="flex gap-2 items-center cursor-pointer relative" > 
                     <p>Company</p>
                     <span>
-                    <IoIosArrowDown />
+                    <IoIosArrowDown  className="arrow_icon" />
                     </span>
+                    { showCompany && 
+                    <div
+                    // ref={companyRef}
+                    className="absolute right-0 inset-0 top-[90px] h-[114px] w-[250px] flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm">
+                    <span to="#" className="flex items-center justify-between hover:text-blue-400 " >
+                        About us 
+                        <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
+                        </span>
+                    <span className="flex items-center justify-between hover:text-blue-400">
+                        Career 
+                         <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
+                        </span>
+                </div>}
                 </span>
+                </div>
+              
                 <span className="cursor-pointer">
                     Blog
                 </span>

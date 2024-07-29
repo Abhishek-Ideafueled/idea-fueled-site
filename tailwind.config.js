@@ -18,6 +18,7 @@ export default {
       colors:{
         'custom-heading':'#222020',
         'custom-blue':'#1D71B8',
+        'custom-body':'#4B5864',
 
       },
       backgroundImage:{

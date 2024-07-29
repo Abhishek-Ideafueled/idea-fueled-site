@@ -1,0 +1,4 @@
+.arrow_icon:hover{
+    transform: rotate(180deg);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
