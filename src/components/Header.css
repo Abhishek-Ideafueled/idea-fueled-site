@@ -46,6 +46,8 @@
     transform: perspective(800px)rotateX(-5deg)rotateY(0)rotate(0)
 }
 
-
+.drop-down li:hover svg{
+    display: block;
+}
 
 

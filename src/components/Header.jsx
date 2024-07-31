@@ -3,7 +3,6 @@ import './Header.css';
 import { useEffect, useRef, useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
-// import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -149,13 +148,11 @@ const Header = () => {
                     
                 </span>
                 <span>
-                    <IoIosArrowDown className={`${active.id==="1" && active.isActive==="true" ? "arrow_icon text-[#0E5EA2]" : ""}`} />
+                    <IoIosArrowDown className={`${active.id==="1" && active.isActive==="true" ? "arrow_icon text-active-blue" : ""}`} />
                     </span>
                     </div>
-                {/* {showDropdown */}
-              {/* // && */}
-             {/* <div className="fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] h-[329px] bg-transparent"> */}
-                <div className={`${!showDropdown ? 'z-0 h-0 w-0 invisible drop-down' : 'fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] h-[329px] bg-transparent drop-down active' }`}>
+  
+                <div className={`${!showDropdown ? 'z-0 h-0 w-0 invisible drop-down' : 'fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] max-h-[329px] bg-transparent drop-down active' }`}>
                  <div 
                  className="h-full w-full mt-12 px-12 py-8 rounded-2xl bg-white">
                     <div className="grid grid-cols-4 gap-6">
@@ -171,7 +168,6 @@ const Header = () => {
                     </div>
                 </div>
                 </div>
-                {/* } */}
                 </div>
              
                 <div className="cursor-pointer overflow-hidden relative h-full" onMouseEnter={()=>{ setActive({id:"2",isActive:"true"})}} onMouseLeave={()=>{ setActive({id:"2",isActive:"false"})}}>
@@ -197,25 +193,32 @@ const Header = () => {
                     
                 </span>
                 <span>
-                    <IoIosArrowDown className={`${active.id==="4" && active.isActive==="true" ? "arrow_icon text-[#0E5EA2]" : ""}`} />
+                    <IoIosArrowDown className={`${active.id==="4" && active.isActive==="true" ? "arrow_icon text-active-blue" : ""}`} />
                     </span> </div>
-                    {/* { showCompany &&  */}
-                    {/* <div className="absolute right-0 inset-0 top-[10px] h-[114px] w-[250px] bg-transparent"> */}
+            
                     <div className={`${!showCompany ? 'invisible z-0 w-0 h-0 drop-down' : 'absolute drop-down active right-0 inset-0 top-[10px] h-[114px] w-[250px] bg-transparent'}`}>
                     <div
                     // ref={companyRef}
-                    className="mt-11 h-full flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm">
-                    <span to="#" className="flex items-center justify-between hover:text-blue-400 " >
+                    className="mt-11 h-full flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm ">
+                    <ul>
+                       <Link to="#" > 
+                       <li  className="flex items-center justify-between h-[37px] mb-2 hover:text-active-blue">
+                      
                         About us 
-                        <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
-                        </span>
-                    <span className="flex items-center justify-between hover:text-blue-400">
+                        <FiArrowUpRight className="hidden"  size={20}/>
+                       </li> </Link>
+                     <Link to='#'>  <li className="flex items-center justify-between  h-[37px] hover:text-active-blue"> 
+                       
                         Career 
-                         <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
-                        </span>
+                         <FiArrowUpRight className="hidden"  size={20}/>
+                        
+                        </li></Link>
+                      </ul>  
+                    
+                   
                 </div>
                 </div>
-                {/* }                */}
+                
                 </div>
               
                  <div className="cursor-pointer relative overflow-hidden" onMouseEnter={()=>{ setActive({id:"5",isActive:"true"})}} onMouseLeave={()=>{ setActive({id:"5",isActive:"false"})}}>
