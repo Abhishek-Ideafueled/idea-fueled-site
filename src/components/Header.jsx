@@ -164,6 +164,12 @@ const Header = () => {
                        <div className="text-custom-body font-konsoleRegular text-sm ">
                             {item.body}
                        </div>
+                       <div className="font-narwaSemiBold font-semibold text-custom-heading text-sm  hover:text-active-blue">
+                        <Link to="#" className="flex items-center gap-2">
+                        Learn more
+                        <FiArrowUpRight className=""  size={20}/>
+                        </Link>
+                       </div>
                    </div>) }
                     </div>
                 </div>
