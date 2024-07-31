@@ -19,6 +19,7 @@ export default {
         'custom-heading':'#222020',
         'custom-blue':'#1D71B8',
         'custom-body':'#4B5864',
+        'active-blue':'#0E5EA2',
 
       },
       backgroundImage:{

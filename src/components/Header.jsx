@@ -9,6 +9,7 @@ const Header = () => {
 
     const [showDropdown,setShowDropdown] = useState(false);
     const [showCompany,setShowCompany] = useState(false);
+    const [active,setActive] = useState({id:'',isActive:false});
 
     const data =[
         {
@@ -64,7 +65,7 @@ const Header = () => {
     }
 
   return (
-    <div className="h-[73px] w-full fixed top-0 px-20 z-20 bg-white flex items-center">
+    <div className="h-[73px] w-full fixed top-0 z-20 bg-white flex items-center">
       <div className="flex  justify-between items-center w-full max-w-[1280px] mx-auto">
         <div className="cursor-pointer">
           <svg
@@ -137,20 +138,25 @@ const Header = () => {
           </svg>
         </div>
         <div className="flex gap-6 items-center h-full">
-            <div className="flex gap-8 items-center font-narwaSemiBold text-base ">
-                <div className="relative h-[73px] flex" onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false)} ref={dropDownRef}>
-                <span className="flex gap-2 items-center cursor-pointer">
-                    <span className="button-texts"> Services</span>
-                    <span className="button-texts hidden "> Services</span>
-                    <span>
-                    <IoIosArrowDown className="arrow_icon" />
-                    </span>
+            <div className="flex gap-8 items-center font-narwaSemiBold text-base">
+                <div className="flex items-center relative cursor-pointer" onMouseEnter={()=>{setShowDropdown(true); setActive({id:"1",isActive:"true"})}} onMouseLeave={()=>{setShowDropdown(false); setActive({id:"1",isActive:"false"})}} ref={dropDownRef}>
+                <div className="overflow-hidden relative flex items-center gap-2 ">
+
+                
+                <span className={`relative h-[23px] flip-button ${active.id==="1" && active.isActive==="true" ? "active " : ""}`}>
+                    <span className="button-texts text-custom-heading"> Services</span>
+                    <span className="button-texts-abs "> Services</span>
+                    
                 </span>
+                <span>
+                    <IoIosArrowDown className={`${active.id==="1" && active.isActive==="true" ? "arrow_icon text-[#0E5EA2]" : ""}`} />
+                    </span>
+                    </div>
                 {showDropdown
               &&
-              <div className="absolute top-[55px] inset-0 left-[-400px] w-[1000px] h-[329px] bg-transparent">
+              <div className="fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] h-[329px] bg-transparent">
                  <div 
-                 className="h-full w-full mt-6 px-12 py-8 rounded-2xl bg-white">
+                 className="h-full w-full mt-12 px-12 py-8 rounded-2xl bg-white">
                     <div className="grid grid-cols-4 gap-6">
                        {data.map((item)=>
                        <div key={item.id} className="bg-[#F8FAFB] rounded-2xl flex flex-col gap-[20px] p-6">
@@ -166,23 +172,36 @@ const Header = () => {
                 </div>}
                 </div>
              
-                <span className="cursor-pointer">
-                    Projects
+                <div className="cursor-pointer overflow-hidden relative h-full" onMouseEnter={()=>{ setActive({id:"2",isActive:"true"})}} onMouseLeave={()=>{ setActive({id:"2",isActive:"false"})}}>
+                   <div className={`flip-button h-full ${active.id ==="2" && active.isActive==="true" ? "active " : ""}`}>
+                        <div className="button-texts">Projects</div>
+                        <div className="button-texts-abs">Projects</div>
+                   </div>
+                </div>
+                
+                  <div className="cursor-pointer relative overflow-hidden" onMouseEnter={()=>{ setActive({id:"3",isActive:"true"})}} onMouseLeave={()=>{ setActive({id:"3",isActive:"false"})}}>
+                          <div className={`flip-button block ${active.id ==="3" && active.isActive==="true" ? "active " : ""}`}>
+                          <div className="button-texts">Process</div>
+                          <div className="button-texts-abs text-[#0E5EA2]">Process</div>
+                          </div>
+                 
+                  
+                </div>
+                <div className="flex items-center relative cursor-pointer" onMouseEnter={()=>{setShowCompany(true); setActive({id:"4",isActive:"true"})}} onMouseLeave={()=>{setShowCompany(false); setActive({id:"4",isActive:"false"})}}>
+                <div className=" overflow-hidden relative flex items-center gap-2" > 
+                <span className={`relative h-[23px] flip-button ${active.id==="4" && active.isActive==="true" ? "active " : ""}`}>
+                    <span className="button-texts text-custom-heading"> Company</span>
+                    <span className="button-texts-abs "> Company</span>
+                    
                 </span>
-                <span className="cursor-pointer">
-                    Process
-                </span>
-                <div className="flex bg-transparent h-[73px]" onMouseEnter={()=>setShowCompany(true)} onMouseLeave={()=>setShowCompany(false)}>
-                <span className="flex gap-2 items-center cursor-pointer relative" > 
-                    <p>Company</p>
-                    <span>
-                    <IoIosArrowDown  className="arrow_icon" />
-                    </span>
+                <span>
+                    <IoIosArrowDown className={`${active.id==="4" && active.isActive==="true" ? "arrow_icon text-[#0E5EA2]" : ""}`} />
+                    </span> </div>
                     { showCompany && 
-                    <div className="absolute right-0 inset-0 top-[70px] h-[114px] w-[250px] bg-transparent">
+                    <div className="absolute right-0 inset-0 top-[10px] h-[114px] w-[250px] bg-transparent">
                     <div
                     // ref={companyRef}
-                    className="mt-2 h-full flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm">
+                    className="mt-11 h-full flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm">
                     <span to="#" className="flex items-center justify-between hover:text-blue-400 " >
                         About us 
                         <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
@@ -192,15 +211,19 @@ const Header = () => {
                          <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
                         </span>
                 </div>
-                </div>}
-                </span>
+                </div>}               
                 </div>
               
-                <span className="cursor-pointer">
-                    Blog
-                </span>
+                 <div className="cursor-pointer relative overflow-hidden" onMouseEnter={()=>{ setActive({id:"5",isActive:"true"})}} onMouseLeave={()=>{ setActive({id:"5",isActive:"false"})}}>
+                          <div className={`flip-button block ${active.id ==="5" && active.isActive==="true" ? "active " : ""}`}>
+                          <div className="button-texts">Blog</div>
+                          <div className="button-texts-abs text-[#0E5EA2]">Blog</div>
+                          </div>
+                 
+                  
+                </div>
             </div>
-            <button className="bg-custom-blue text-white font-narwaSemiBold text-[16px] leading-[1.45rem] rounded-lg h-[47px] w-[107px]">
+            <button className="bg-custom-blue hover:bg-active-blue text-white font-narwaSemiBold text-[16px] leading-[1.45rem] rounded-lg h-[47px] w-[107px]">
                 Contact
             </button>
         </div>
