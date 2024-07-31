@@ -152,9 +152,10 @@ const Header = () => {
                     <IoIosArrowDown className={`${active.id==="1" && active.isActive==="true" ? "arrow_icon text-[#0E5EA2]" : ""}`} />
                     </span>
                     </div>
-                {showDropdown
-              &&
-              <div className="fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] h-[329px] bg-transparent">
+                {/* {showDropdown */}
+              {/* // && */}
+             {/* <div className="fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] h-[329px] bg-transparent"> */}
+                <div className={`${!showDropdown ? 'z-0 h-0 w-0 invisible drop-down' : 'fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] h-[329px] bg-transparent drop-down active' }`}>
                  <div 
                  className="h-full w-full mt-12 px-12 py-8 rounded-2xl bg-white">
                     <div className="grid grid-cols-4 gap-6">
@@ -169,7 +170,8 @@ const Header = () => {
                    </div>) }
                     </div>
                 </div>
-                </div>}
+                </div>
+                {/* } */}
                 </div>
              
                 <div className="cursor-pointer overflow-hidden relative h-full" onMouseEnter={()=>{ setActive({id:"2",isActive:"true"})}} onMouseLeave={()=>{ setActive({id:"2",isActive:"false"})}}>
@@ -197,8 +199,9 @@ const Header = () => {
                 <span>
                     <IoIosArrowDown className={`${active.id==="4" && active.isActive==="true" ? "arrow_icon text-[#0E5EA2]" : ""}`} />
                     </span> </div>
-                    { showCompany && 
-                    <div className="absolute right-0 inset-0 top-[10px] h-[114px] w-[250px] bg-transparent">
+                    {/* { showCompany &&  */}
+                    {/* <div className="absolute right-0 inset-0 top-[10px] h-[114px] w-[250px] bg-transparent"> */}
+                    <div className={`${!showCompany ? 'invisible z-0 w-0 h-0 drop-down' : 'absolute drop-down active right-0 inset-0 top-[10px] h-[114px] w-[250px] bg-transparent'}`}>
                     <div
                     // ref={companyRef}
                     className="mt-11 h-full flex flex-col justify-between bg-[#F8FAFB] rounded-lg py-4 px-6 font-narwaSemiBold font-semibold text-sm">
@@ -211,7 +214,8 @@ const Header = () => {
                          <FiArrowUpRight className="hover:text-blue-400"  size={20}/>
                         </span>
                 </div>
-                </div>}               
+                </div>
+                {/* }                */}
                 </div>
               
                  <div className="cursor-pointer relative overflow-hidden" onMouseEnter={()=>{ setActive({id:"5",isActive:"true"})}} onMouseLeave={()=>{ setActive({id:"5",isActive:"false"})}}>
