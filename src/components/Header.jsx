@@ -1,14 +1,16 @@
 import { IoIosArrowDown } from "react-icons/io";
 import './Header.css';
 import { useEffect, useRef, useState } from "react";
-import { FiArrowUpRight } from "react-icons/fi";
+import { FiArrowUpRight, FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import HeaderMobile from "./HeaderMobile";
 
 const Header = () => {
 
     const [showDropdown,setShowDropdown] = useState(false);
     const [showCompany,setShowCompany] = useState(false);
     const [active,setActive] = useState({id:'',isActive:false});
+    const [openDrop,setOpenDrop] = useState(false);
 
     const data =[
         {
@@ -35,7 +37,6 @@ const Header = () => {
     ]
 
     const dropDownRef = useRef();
-    const companyRef = useRef()
 
     useEffect(()=>{
       document.addEventListener('mousedown',handleClickOutside);
@@ -52,20 +53,12 @@ const Header = () => {
        setShowDropdown(false);
   
       }
-    //   if (companyRef.current && !companyRef.current.contains(event.target)) {
-  
-    //     setShowCompany(false);
-   
-    //    }
     }
     
-    const handleCompany=()=>{
-        setShowCompany(!showCompany);
-    }
 
   return (
     <div className="h-[73px] w-full fixed top-0 z-20 bg-white flex items-center">
-      <div className="flex  justify-between items-center w-full max-w-[1280px] mx-auto">
+      <div className="flex  justify-between items-center nav-container mx-auto">
         <div className="cursor-pointer">
           <svg
             width="130"
@@ -136,7 +129,7 @@ const Header = () => {
             />
           </svg>
         </div>
-        <div className="flex gap-6 items-center h-full">
+        <div className="hidden lg:flex gap-6 items-center h-full">
             <div className="flex gap-8 items-center font-narwaSemiBold text-base">
                 <div className="flex items-center relative cursor-pointer" onMouseEnter={()=>{setShowDropdown(true); setActive({id:"1",isActive:"true"})}} onMouseLeave={()=>{setShowDropdown(false); setActive({id:"1",isActive:"false"})}} ref={dropDownRef}>
                 <div className="overflow-hidden relative flex items-center gap-2 ">
@@ -152,7 +145,7 @@ const Header = () => {
                     </span>
                     </div>
   
-                <div className={`${!showDropdown ? 'z-0 h-0 w-0 invisible drop-down' : 'fixed top-[30px] mx-auto left-0 right-0 max-w-[1280px] max-h-[329px] bg-transparent drop-down active' }`}>
+                <div className={`${!showDropdown ? 'z-0 h-0 w-0 invisible drop-down' : 'fixed top-[30px] mx-auto left-0 right-0 nav-container max-h-[329px] bg-transparent drop-down active' }`}>
                  <div 
                  className="h-full w-full mt-12 px-12 py-8 rounded-2xl bg-white">
                     <div className="grid grid-cols-4 gap-6">
@@ -240,7 +233,14 @@ const Header = () => {
                 Contact
             </button>
         </div>
+        <div className="block lg:hidden" onClick={()=>setOpenDrop(!openDrop)}>
+        <FiMenu size={30} />
+        </div>
       </div>
+      <div className={`${!openDrop ? 'z-0 h-0 w-0 invisible drop-down' : 'max-h-[257px] h-full drop-down active'} fixed inset-0 mt-[73px]  nav-container mx-auto`}>
+                        <HeaderMobile/>
+      </div>
+     
     </div>
   );
 }

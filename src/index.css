@@ -29,8 +29,17 @@
   /* .btn-orange {
     @apply bg-custom-button font-ttCommonProMedium font-semibold tracking-[0.8px] text-btn-text hover:bg-btn-hover;
   } */
+   .nav-container{
+    @apply w-full px-5 lg:max-w-[1000px] lg:px-0 xl:max-w-[1280px]
+   }
   .main-container{
-    @apply w-full max-w-[1000px]
+    @apply w-full max-w-[1000px];
+  }
+  .heading-h1{
+    @apply font-narwaBold text-[40px] leading-[50px] md:text-[50px] md:leading-[60px] lg:text-[60px] lg:leading-[75px] ;
+  }
+  .sub-heading{
+    @apply font-konsoleRegular text-lg leading-[27px] md:text-xl md:leading-[28px] lg:text-2xl lg:leading-[36px] ;
   }
   /* ... */
 }
