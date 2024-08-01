@@ -30,7 +30,7 @@
     @apply bg-custom-button font-ttCommonProMedium font-semibold tracking-[0.8px] text-btn-text hover:bg-btn-hover;
   } */
    .nav-container{
-    @apply w-full px-5 lg:max-w-[1000px] lg:px-0 xl:max-w-[1280px]
+    @apply w-full px-5 lg:max-w-[1000px] lg:px-0 extra-xl:max-w-[1280px]
    }
   .main-container{
     @apply px-5 lg:px-0 w-full max-w-[1000px];

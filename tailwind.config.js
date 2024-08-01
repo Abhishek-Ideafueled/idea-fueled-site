@@ -8,7 +8,9 @@ export default {
   ],
   theme: {
     extend: {
-
+      screens:{
+        'extra-xl':'1366px',
+      },
       fontFamily:{
         konsoleRegular: ["Konsole-Regular"],
         konsoleRegular2: ["Konsole-Regular2"],
@@ -24,7 +26,10 @@ export default {
       },
       backgroundImage:{
           'hero-section' : "linear-gradient(114.13deg, #2FBEC2 -5.35%, #2E82A3 22.85%, #301065 89.65%)",
-          'rating-section':"linear-gradient(90deg, #F8FAFB 4.25%, #FFF2F1 101.43%)",
+          'clutch-section':"linear-gradient(90deg, #F8FAFB 4.25%, #FFF2F1 101.43%)",
+          'clutch-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #FEE2E0 101.43%)",
+          'upwork-section':"linear-gradient(90deg, #F8FAFB 4.25%, #EBF7E9 101.43%)",
+          'upwork-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #E3FBE0 101.43%)",
       }
     },
   },
