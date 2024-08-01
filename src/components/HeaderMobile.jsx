@@ -13,7 +13,7 @@ const HeaderMobile = () => {
 
   return (
     <div className="bg-white w-full h-full p-6 rounded-xl">
-      <ul className="font-narwaSemiBold text-base leading-[23px] text-custom-heading flex flex-col gap-4 ">
+      <ul className="font-narwaSemiBold text-base leading-[23px] text-custom-heading flex flex-col gap-4">
         <li className="relative flex justify-between items-center hover:text-active-blue" onClick={()=>handleAccordian(1)}>
             Services
             <IoIosArrowDown className={`${headerAccordian.id===1 && headerAccordian.isActive===true ? 'arrow-active': 'arrow-side'}  transition-all duration-200`}/>
@@ -38,7 +38,7 @@ const HeaderMobile = () => {
         <li className="relative flex justify-between items-center hover:text-active-blue" onClick={()=>handleAccordian(2)}>
             Company
             <IoIosArrowDown className={`${headerAccordian.id===2 && headerAccordian.isActive===true ? 'arrow-active': 'arrow-side'} transition-all duration-200`}/>
-            <div className={`${headerAccordian.id===2 && headerAccordian.isActive===true ? 'h-auto w-auto ':'h-0 w-0 z-0 invisible'} absolute inset-0 top-10`}>
+            <div className={`${headerAccordian.id===2 && headerAccordian.isActive===true ? 'h-auto w-auto ':'h-0 w-0 z-0 invisible'} absolute inset-0 top-8`}>
                 <ul className='flex flex-col gap-4 bg-white text-custom-heading'>
                    <Link> <li>About Us</li></Link>
                    <Link> <li>Career</li></Link>
