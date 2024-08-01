@@ -24,6 +24,7 @@ export default {
       },
       backgroundImage:{
           'hero-section' : "linear-gradient(114.13deg, #2FBEC2 -5.35%, #2E82A3 22.85%, #301065 89.65%)",
+          'rating-section':"linear-gradient(90deg, #F8FAFB 4.25%, #FFF2F1 101.43%)",
       }
     },
   },

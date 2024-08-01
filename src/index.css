@@ -33,10 +33,13 @@
     @apply w-full px-5 lg:max-w-[1000px] lg:px-0 xl:max-w-[1280px]
    }
   .main-container{
-    @apply w-full max-w-[1000px];
+    @apply px-5 lg:px-0 w-full max-w-[1000px];
   }
   .heading-h1{
     @apply font-narwaBold text-[40px] leading-[50px] md:text-[50px] md:leading-[60px] lg:text-[60px] lg:leading-[75px] ;
+  }
+  .heading-h2{
+    @apply font-narwaSemiBold text-[28px] leading-[35px] md:text-[36px] md:leading-[45px] lg:text-[42px] lg:leading-[52.5px];
   }
   .sub-heading{
     @apply font-konsoleRegular text-lg leading-[27px] md:text-xl md:leading-[28px] lg:text-2xl lg:leading-[36px] ;

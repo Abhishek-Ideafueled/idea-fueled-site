@@ -237,7 +237,7 @@ const Header = () => {
         <FiMenu size={30} />
         </div>
       </div>
-      <div className={`${!openDrop ? 'z-0 h-0 w-0 invisible drop-down' : 'max-h-[247px] h-full drop-down active'} fixed inset-0 mt-[73px]  nav-container mx-auto`}>
+      <div className={`${!openDrop ? 'z-0 h-0 w-0 invisible drop-down' : 'h-full drop-down active'} fixed inset-0 mt-[73px] lg:hidden  nav-container mx-auto`}>
                         <HeaderMobile/>
       </div>
      
