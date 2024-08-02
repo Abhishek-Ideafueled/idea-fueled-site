@@ -37,6 +37,7 @@ export default {
       },
       boxShadow:{
         'project-card-shadow':"0px 9px 5.3px 0px rgba(0, 0, 0, 0.3)",
+        'services-card-shadow':"4px 4px 20px 0px #0000000A",
 
       }
 
