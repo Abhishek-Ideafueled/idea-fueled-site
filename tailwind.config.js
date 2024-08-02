@@ -33,7 +33,11 @@ export default {
           'upwork-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #E3FBE0 101.43%)",
           'case-studies':"url('/case-studies.jpg')",
           'project-card':"linear-gradient(93.67deg, #2B2B2B -3.37%, #171B18 108.14%)",
-          'pricing-bg':"url('/pricing-bg.jpg')"
+          'pricing-bg':"url('/pricing-bg.jpg')",
+          'pricing-cardbg':"linear-gradient(93.67deg, #2B2B2B -3.37%, #171B18 108.14%)",
+          'pricing-border':"linear-gradient(90deg, #373737 0%, #787878 47%, #1B1E1C 100%)",
+          'pricing-hover':"linear-gradient(93.67deg, #113655 -3.37%, #0A2A46 108.14%)",
+          
 
       },
       boxShadow:{

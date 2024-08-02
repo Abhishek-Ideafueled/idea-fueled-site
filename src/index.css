@@ -39,13 +39,13 @@
     @apply font-narwaBold text-[40px] leading-[50px] md:text-[50px] md:leading-[60px] lg:text-[60px] lg:leading-[75px] ;
   }
   .heading-h2{
-    @apply font-narwaSemiBold text-[28px] leading-[35px] md:text-[36px] md:leading-[45px] lg:text-[42px] lg:leading-[52.5px];
+    @apply font-narwaSemiBold font-semibold text-[28px] leading-[35px] md:text-[36px] md:leading-[45px] lg:text-[42px] lg:leading-[52.5px];
   }
   .sub-heading{
     @apply font-konsoleRegular text-lg leading-[27px] md:text-xl md:leading-[28px] lg:text-2xl lg:leading-[36px] ;
   }
   .sub-heading2{
-    @apply font-konsoleRegular text-lg leading-[27px] lg:text-xl lg:leading-[27px] ;
+    @apply font-konsoleRegular text-lg leading-[27px] lg:text-xl lg:leading-[30px] ;
   }
   .card-heading{
     @apply font-narwaSemiBold font-semibold text-2xl leading-[30px] lg:text-[28px] lg:leading-[35px] text-white;
