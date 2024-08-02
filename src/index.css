@@ -47,5 +47,11 @@
   .sub-heading2{
     @apply font-konsoleRegular text-lg leading-[27px] lg:text-xl lg:leading-[27px] ;
   }
+  .card-heading{
+    @apply font-narwaSemiBold font-semibold text-2xl leading-[30px] lg:text-[28px] lg:leading-[35px] text-white;
+  }
+  .card-btn{
+    @apply h-[46px] w-[173px] font-konsoleRegular font-semibold text-sm text-white bg-custom-blue rounded-lg hover:bg-active-blue;
+  }
   /* ... */
 }

@@ -23,7 +23,7 @@ export default {
         'custom-body':'#4B5864',
         'active-blue':'#0E5EA2',
         'light-gray':'#F8FAFB',
-
+        'pills-bg':'#363A3E',
       },
       backgroundImage:{
           'hero-section' : "linear-gradient(114.13deg, #2FBEC2 -5.35%, #2E82A3 22.85%, #301065 89.65%)",
@@ -31,8 +31,15 @@ export default {
           'clutch-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #FEE2E0 101.43%)",
           'upwork-section':"linear-gradient(90deg, #F8FAFB 4.25%, #EBF7E9 101.43%)",
           'upwork-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #E3FBE0 101.43%)",
-          'case-studies':"url('/case-studies.jpg')"
+          'case-studies':"url('/case-studies.jpg')",
+          'project-card':"linear-gradient(93.67deg, #2B2B2B -3.37%, #171B18 108.14%)",
+
+      },
+      boxShadow:{
+        'project-card-shadow':"0px 9px 5.3px 0px rgba(0, 0, 0, 0.3)",
+
       }
+
     },
   },
   plugins: [],
