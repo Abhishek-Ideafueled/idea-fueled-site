@@ -13,17 +13,17 @@ const HeaderMobile = () => {
 
   return (
     <div className="w-full h-full bg-transparent">
-        <div className='bg-white p-6 rounded-xl'>
+        <div className={`bg-white p-6 rounded-xl ${headerAccordian.id===2 && headerAccordian.isActive===true ? 'h-[250px]': ''}`}>
 <ul className="font-narwaSemiBold text-base leading-[23px] text-custom-heading flex flex-col gap-4">
         <li className="relative flex justify-between items-center hover:text-active-blue" onClick={()=>handleAccordian(1)}>
             Services
             <IoIosArrowDown className={`${headerAccordian.id===1 && headerAccordian.isActive===true ? 'arrow-active': 'arrow-side'}  transition-all duration-200`}/>
             
-            <div className={`${headerAccordian.id===1 && headerAccordian.isActive===true ? 'h-auto w-auto ':'h-0 w-0 z-0 invisible'} absolute inset-0 top-10`}>
+            <div className={`${headerAccordian.id===1 && headerAccordian.isActive===true ? 'h-auto w-auto z-10 ':'h-0 w-0 z-0 invisible'} absolute inset-0 top-10`}>
                 <ul className='flex flex-col gap-4 bg-white text-custom-heading'>
                    <Link> <li>Digital Advisory</li></Link>
                    <Link> <li>Design</li></Link>
-                   <Link> <li>Developemnt</li></Link>
+                   <Link> <li>Development</li></Link>
                    <Link> <li>Marketing</li></Link>
                 </ul>
             </div>
@@ -39,7 +39,7 @@ const HeaderMobile = () => {
         <li className="relative flex justify-between items-center hover:text-active-blue" onClick={()=>handleAccordian(2)}>
             Company
             <IoIosArrowDown className={`${headerAccordian.id===2 && headerAccordian.isActive===true ? 'arrow-active': 'arrow-side'} transition-all duration-200`}/>
-            <div className={`${headerAccordian.id===2 && headerAccordian.isActive===true ? 'h-auto w-auto ':'h-0 w-0 z-0 invisible'} absolute inset-0 top-10`}>
+            <div className={`${headerAccordian.id===2 && headerAccordian.isActive===true ? 'h-auto w-auto z-10':'h-0 w-0 z-0 invisible'} absolute inset-0 top-10`}>
                 <ul className='flex flex-col gap-4 bg-white text-custom-heading'>
                    <Link> <li>About Us</li></Link>
                    <Link> <li>Career</li></Link>

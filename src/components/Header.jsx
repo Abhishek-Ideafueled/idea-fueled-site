@@ -59,10 +59,10 @@ const Header = () => {
   return (
     <div className="h-[73px] w-full fixed top-0 z-20 bg-white flex items-center">
       <div className="flex  justify-between items-center nav-container mx-auto">
-        <div className="cursor-pointer">
+        <div className="cursor-pointer h-[56px]">
           <svg
-            width="130"
-            height="46"
+            width="100%"
+            height="100%"
             viewBox="0 0 130 46"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

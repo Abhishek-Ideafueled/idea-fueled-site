@@ -92,7 +92,8 @@ const AboutUs = () => {
           <div className="relative w-[320px] min-h-[445px] h-[520px] mt-10 md:mt-0 self-center">
             <img src="/team-image.jpg" alt="our team image" className="rounded-full w-full" />
             <div className="absolute bottom-10 md:bottom-20 left-16 bg-custom-blue w-[160px] flex gap-2 rounded-full p-1 pr-4 cursor-pointer">
-                <span><svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span>
+                  <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_b_27_1457)">
 <path fillRule="evenodd" clipRule="evenodd" d="M20 40.6667C31.0457 40.6667 40 31.7124 40 20.6667C40 9.62105 31.0457 0.666748 20 0.666748C8.9543 0.666748 0 9.62105 0 20.6667C0 31.7124 8.9543 40.6667 20 40.6667ZM16.875 28.0028L28.125 21.7148C28.9583 21.249 28.9583 20.0845 28.125 19.6187L16.875 13.3307C16.0417 12.8649 15 13.4471 15 14.3787L15 26.9548C15 27.8864 16.0417 28.4686 16.875 28.0028Z" fill="white"/>
 </g>
