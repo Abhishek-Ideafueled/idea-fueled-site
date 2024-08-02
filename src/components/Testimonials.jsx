@@ -83,8 +83,23 @@ const Testimonials = () => {
                                 <span className="">
                                     <img src="/medfin-logo2.png" alt="medfin logo" />
                                 </span>
-                                <div className="bg-custom-blue">
-                                    <img src="/medfin-banner.png" className="rounded-lg" alt="Medfin Bannder video" />
+                                <div className="bg-custom-blue relative">
+                                    <img src="/medfin-banner.png" className="rounded-lg relative" alt="Medfin Bannder video" />
+                                    <div className="absolute top-[40%] left-[40%] cursor-pointer hover:opacity-80">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_99_7)">
+<path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24Z" fill="#EBDB00"/>
+<path d="M20.2634 32.7158C19.9871 32.7152 19.7156 32.639 19.4758 32.4945C18.9357 32.1724 18.6 31.5471 18.6 30.8684V17.1316C18.6 16.4509 18.9357 15.8276 19.4758 15.5055C19.7214 15.3569 20.0003 15.2805 20.2835 15.2843C20.5667 15.288 20.8437 15.3718 21.0857 15.5268L32.2405 22.5543C32.4729 22.7078 32.6646 22.9208 32.7974 23.1735C32.9303 23.4262 33 23.7102 33 23.999C33 24.2879 32.9303 24.5719 32.7974 24.8246C32.6646 25.0773 32.4729 25.2903 32.2405 25.4438L21.0839 32.4732C20.8363 32.6307 20.5527 32.7146 20.2634 32.7158Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_99_7">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+
+                                    </div>
                                 </div>
                             </div>
                             <div className="flex justify-between">
@@ -151,8 +166,23 @@ const Testimonials = () => {
                                 <span className="">
                                     <img src="/medfin-logo2.png" alt="medfin logo" />
                                 </span>
-                                <div className="bg-custom-blue">
-                                    <img src="/medfin-banner.png" className="rounded-lg" alt="Medfin Bannder video" />
+                                <div className="bg-custom-blue relative">
+                                    <img src="/medfin-banner.png" className="rounded-lg relative" alt="Medfin Bannder video" />
+                                    <div className="absolute top-[40%] left-[40%] cursor-pointer hover:opacity-80">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_99_7)">
+<path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24Z" fill="#EBDB00"/>
+<path d="M20.2634 32.7158C19.9871 32.7152 19.7156 32.639 19.4758 32.4945C18.9357 32.1724 18.6 31.5471 18.6 30.8684V17.1316C18.6 16.4509 18.9357 15.8276 19.4758 15.5055C19.7214 15.3569 20.0003 15.2805 20.2835 15.2843C20.5667 15.288 20.8437 15.3718 21.0857 15.5268L32.2405 22.5543C32.4729 22.7078 32.6646 22.9208 32.7974 23.1735C32.9303 23.4262 33 23.7102 33 23.999C33 24.2879 32.9303 24.5719 32.7974 24.8246C32.6646 25.0773 32.4729 25.2903 32.2405 25.4438L21.0839 32.4732C20.8363 32.6307 20.5527 32.7146 20.2634 32.7158Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_99_7">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+
+                                    </div>
                                 </div>
                             </div>
                             <div className="flex justify-between">
@@ -218,8 +248,23 @@ const Testimonials = () => {
                                 <span className="">
                                     <img src="/medfin-logo2.png" alt="medfin logo" />
                                 </span>
-                                <div className="bg-custom-blue">
-                                    <img src="/medfin-banner.png" className="rounded-lg" alt="Medfin Bannder video" />
+                                <div className="bg-custom-blue relative">
+                                    <img src="/medfin-banner.png" className="rounded-lg relative" alt="Medfin Bannder video" />
+                                    <div className="absolute top-[40%] left-[40%] cursor-pointer hover:opacity-80">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_99_7)">
+<path d="M48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24Z" fill="#EBDB00"/>
+<path d="M20.2634 32.7158C19.9871 32.7152 19.7156 32.639 19.4758 32.4945C18.9357 32.1724 18.6 31.5471 18.6 30.8684V17.1316C18.6 16.4509 18.9357 15.8276 19.4758 15.5055C19.7214 15.3569 20.0003 15.2805 20.2835 15.2843C20.5667 15.288 20.8437 15.3718 21.0857 15.5268L32.2405 22.5543C32.4729 22.7078 32.6646 22.9208 32.7974 23.1735C32.9303 23.4262 33 23.7102 33 23.999C33 24.2879 32.9303 24.5719 32.7974 24.8246C32.6646 25.0773 32.4729 25.2903 32.2405 25.4438L21.0839 32.4732C20.8363 32.6307 20.5527 32.7146 20.2634 32.7158Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_99_7">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+
+                                    </div>
                                 </div>
                             </div>
                             <div className="flex justify-between">

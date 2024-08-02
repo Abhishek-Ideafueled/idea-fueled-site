@@ -55,7 +55,7 @@
   }
   .services-pill
   {
-    @apply bg-[#E5F3FF] text-custom-blue flex items-center px-3 py-2 font-konsoleRegular text-xs leading-[18px] capitalize rounded-[50px];
+    @apply bg-[#E5F3FF] text-custom-blue font-semibold flex items-center px-3 py-2 font-konsoleRegular text-xs leading-[18px] uppercase rounded-[50px];
   }
   /* ... */
 }

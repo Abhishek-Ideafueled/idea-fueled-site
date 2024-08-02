@@ -1,6 +1,7 @@
 
 import './App.css'
 import AboutUs from './components/AboutUs'
+import BlogSection from './components/BlogSection'
 import FirstSection from './components/FirstSection'
 import Header from './components/Header'
 import Partners from './components/Partners'
@@ -21,6 +22,7 @@ function App() {
      <Pricing/>
      <Partners/>
      <Testimonials/>
+     <BlogSection/>
     </>
   )
 }
