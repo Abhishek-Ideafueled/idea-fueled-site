@@ -14,9 +14,9 @@ const Pricing = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mt-[60px] gap-6">
                 <div className="flex flex-col bg-pricing-cardbg gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
-                  <div className="h-[46px] border-b-pricing-border border-b-[1px]">
+                  
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Build From Scratch</h3>
-                    </div>  
+                   <span className="bg-pricing-border h-[1px]"></span> 
                     <div className="font-konsoleRegular text-light-gray text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Have an idea you want to launch from scratch?</li>
@@ -30,9 +30,9 @@ const Pricing = () => {
                     </button>
                 </div>
                 <div className="flex flex-col bg-pricing-cardbg gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
-                  <div className="h-[46px] border-b-pricing-border border-b-[1px]">
+                  
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Your Product Team</h3>
-                    </div>  
+                    <span className="bg-pricing-border h-[1px]"></span> 
                     <div className="font-konsoleRegular text-light-gray text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Want to accelerate product development?</li>
@@ -46,9 +46,9 @@ const Pricing = () => {
                     </button>
                 </div>
                 <div className="flex flex-col bg-pricing-cardbg gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
-                  <div className="h-[46px] border-b-pricing-border border-b-[1px]">
+                
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Support & Upgrades</h3>
-                    </div>  
+                    <span className="bg-pricing-border h-[1px]"></span> 
                     <div className="font-konsoleRegular text-light-gray text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Have an existing app that needs support?</li>
@@ -57,7 +57,7 @@ const Pricing = () => {
                         </ul>
 
                     </div>
-                    <button className="card-btn w-full flex items-center justify-center gap-2 text-base mt-8">
+                    <button className="card-btn w-full flex items-center justify-center gap-2 text-base mt-[30px]">
                     Book a Call <FiArrowUpRight  size={20}/>
                     </button>
                 </div>
