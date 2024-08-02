@@ -129,7 +129,7 @@ const Header = () => {
             />
           </svg>
         </div>
-        <div className="hidden lg:flex gap-6 items-center h-full">
+        <div className="hidden lg:flex gap-8 items-center h-full">
             <div className="flex gap-8 items-center font-narwaSemiBold text-base">
                 <div className="flex items-center relative cursor-pointer" onMouseEnter={()=>{setShowDropdown(true); setActive({id:"1",isActive:"true"})}} onMouseLeave={()=>{setShowDropdown(false); setActive({id:"1",isActive:"false"})}} ref={dropDownRef}>
                 <div className="overflow-hidden relative flex items-center gap-2 ">
