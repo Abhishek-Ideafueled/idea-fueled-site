@@ -37,7 +37,7 @@ export default {
           'pricing-cardbg':"linear-gradient(93.67deg, #2B2B2B -3.37%, #171B18 108.14%)",
           'pricing-border':"linear-gradient(90deg, #373737 0%, #787878 47%, #1B1E1C 100%)",
           'pricing-hover':"linear-gradient(93.67deg, #113655 -3.37%, #0A2A46 108.14%)",
-          
+          'contactform-bg':'linear-gradient(59.15deg, #1D71B8 12.54%, #0960A9 46.27%, #338FDD 69.86%, #1D71B8 105.77%)',
 
       },
       boxShadow:{

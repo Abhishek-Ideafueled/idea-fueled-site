@@ -2,6 +2,7 @@
 import './App.css'
 import AboutUs from './components/AboutUs'
 import BlogSection from './components/BlogSection'
+import ContactForm from './components/ContactForm'
 import FirstSection from './components/FirstSection'
 import Header from './components/Header'
 import Partners from './components/Partners'
@@ -23,6 +24,7 @@ function App() {
      <Partners/>
      <Testimonials/>
      <BlogSection/>
+     <ContactForm/>
     </>
   )
 }
