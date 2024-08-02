@@ -22,6 +22,7 @@ export default {
         'custom-blue':'#1D71B8',
         'custom-body':'#4B5864',
         'active-blue':'#0E5EA2',
+        'light-gray':'#F8FAFB',
 
       },
       backgroundImage:{
@@ -30,6 +31,7 @@ export default {
           'clutch-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #FEE2E0 101.43%)",
           'upwork-section':"linear-gradient(90deg, #F8FAFB 4.25%, #EBF7E9 101.43%)",
           'upwork-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #E3FBE0 101.43%)",
+          'case-studies':"url('/case-studies.jpg')"
       }
     },
   },

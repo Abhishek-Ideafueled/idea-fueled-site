@@ -44,5 +44,8 @@
   .sub-heading{
     @apply font-konsoleRegular text-lg leading-[27px] md:text-xl md:leading-[28px] lg:text-2xl lg:leading-[36px] ;
   }
+  .sub-heading2{
+    @apply font-konsoleRegular text-lg leading-[27px] lg:text-xl lg:leading-[27px] ;
+  }
   /* ... */
 }

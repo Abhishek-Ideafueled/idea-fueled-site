@@ -6,7 +6,7 @@ import { IoStarSharp } from "react-icons/io5";
 
 const AboutUs = () => {
   return (
-    <div className="w-full min-h-[733px] py-[40px] md:py-[80px] lg:py-[120px] overflow-hidden">
+    <div className="w-full h-[100vh] py-[40px] md:py-[80px] lg:py-[120px] overflow-hidden">
       <div className="main-container mx-auto flex justify-center md:px-10 lg:px-0">
         <div className="flex flex-col md:flex-row  lg:gap-[50px] xl:gap-[100px]">
 
