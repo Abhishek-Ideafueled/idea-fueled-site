@@ -26,7 +26,7 @@ function App() {
      <Testimonials/>
      <BlogSection/>
      <ContactForm/>
-     <Footer/>
+     {/* <Footer/> */}
     </>
   )
 }

@@ -11,8 +11,17 @@
 }
 
 .slider-outer .btn-prev{
-    background-color: black;
+    background-image: url('/prevArrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.slider-outer .btn-next{
+    background-image: url('/nextArrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .btn-prev, .btn-next{
     background: #EFBC43;
@@ -25,5 +34,11 @@
     /* background-image: url('/arrow.svg');
     background-repeat: no-repeat;
     background-position: center; */
-    content: 'Prev';
+    content: '';
+}
+
+.slider-outer .swiper-wrapper .swiper-slide {
+    /* width:auto !important; */
+    display: flex;
+    justify-content: center;
 }
