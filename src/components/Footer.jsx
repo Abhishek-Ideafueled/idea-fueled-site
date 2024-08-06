@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -5,23 +6,23 @@ const Footer = () => {
     <div className="w-full bg-custom-heading">
       <div className="main-container mx-auto">
 
-        <div className="flex gap-2 py-10 justify-between">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-2 py-6 lg:py-10 items-center justify-between">
           <div className="text-white font-narwaBold font-bold text-2xl leading-[30px]">
-            Subscribe to our newsletter to <br />
+            Subscribe to our newsletter to <br  className="hidden lg:block"/>
             stay in touch with the latest.
           </div>
-          <div className="flex gap-2 items-center">
+          <div className="flex flex-col sm:flex-row gap-2 items-center justify-center w-full">
             <input
               type="text"
-              className="p-4 rounded-lg border-custom-body border-[1.5px] bg-custom-heading w-[380px]"
+              className="p-4 rounded-lg border-custom-body border-[1.5px] bg-custom-heading w-full sm:w-[380px]"
               placeholder="Your email address"
             />
-            <button className="card-btn h-full w-[122px]">Subscribe</button>
+            <button className="card-btn h-[56px] w-full sm:w-[122px]">Subscribe</button>
           </div>
         </div>
 
-        <div className="grid grid-cols-4 py-10 border-t-custom-body border-t-[1px]">
-            <div className="flex flex-col items-start">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10 gap-6 sm:gap-4 lg:gap-0 border-t-custom-body border-t-[1px]">
+            <div className="flex flex-col items-start col-span-2 sm:col-span-1 gap-6 md:gap-[10px]">
             <div className="cursor-pointer h-[53px]">
           <svg
             width="100%"
@@ -118,7 +119,7 @@ const Footer = () => {
             </div>
             <div className="">
             <ul className="flex flex-col text-white gap-[10px]">
-                <h2 className="font-narwaBold font-bold  text-xl leading-[25px]">Company</h2>
+                <h2 className="font-narwaBold font-bold text-lg leading-[22px] md:text-xl md:leading-[25px]">Company</h2>
                 <li className="font-konsoleRegular">About Us</li>
                 <li className="font-konsoleRegular">Career</li>
                 <li className="font-konsoleRegular">Blogs</li>
@@ -126,7 +127,7 @@ const Footer = () => {
             </div>
             <div className="">
             <ul className="flex flex-col text-white gap-[10px]">
-                <h2 className="font-narwaBold font-bold  text-xl leading-[25px]">Services</h2>
+                <h2 className="font-narwaBold font-bold text-lg leading-[22px] md:text-xl md:leading-[25px]">Services</h2>
                 <li className="font-konsoleRegular">Digital Advisory</li>
                 <li className="font-konsoleRegular"> Design Services</li>
                 <li className="font-konsoleRegular"> Web Development</li>
@@ -135,17 +136,17 @@ const Footer = () => {
             </div>
             <div className="">
             <ul className="flex flex-col text-white gap-[10px]">
-                <h2 className="font-narwaBold font-bold  text-xl leading-[25px]">Contact Us</h2>
+                <h2 className="font-narwaBold font-bold text-lg leading-[22px] md:text-xl md:leading-[25px]">Contact Us</h2>
                 <li className="font-konsoleRegular"><span className="text-[#B3B3B3]">Email:</span> hr@ideafueled.com</li>
                 <li className="font-konsoleRegular"> <span className="text-[#B3B3B3]">Call:</span> +91 - 9878452XXX</li>
                 <li className="font-konsoleRegular flex flex-col">
-                <span className="text-[#B3B3B3]">Address <span className="text-custom-blue">(view on map)</span></span>
+                <span className="text-[#B3B3B3]">Address <span className="text-custom-blue text-sm"><Link to="#">(view on map)</Link></span></span>
                 Plot No.C, 130, Sector 82,<br /> JLPL Industrial Area, SAS <br /> Nagar, Punjab 140308
                 </li>
             </ul>
             </div>
         </div>
-        <div className="flex justify-between items-center py-10 font-konsoleRegular text-sm text-white">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 justify-between items-center py-4 lg:py-10 font-konsoleRegular text-sm text-white">
         <span><span className="text-[#B3B3B3]">©</span>2024 — All Rights Reserved By Idea Fueled</span>
         <span>Privacy Policy   |  Terms & Conditions</span>
         </div>  
