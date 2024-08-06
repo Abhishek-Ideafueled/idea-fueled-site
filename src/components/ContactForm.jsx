@@ -5,10 +5,10 @@ const ContactForm = () => {
   return (
     <div className="w-full bg-contactform-bg">
       <div className="main-container mx-auto py-10 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
 
-          <div className="flex flex-col max-w-[492px]">
+          <div className="flex flex-col max-w-[492px] mx-auto md:mx-0">
             <div className="heading-h2 text-white mb-8">
               Step into the future with confidence
             </div>
@@ -57,27 +57,27 @@ const ContactForm = () => {
             <form action="" className="flex flex-col gap-6">
                 <h3 className="font-narwaSemiBold text-xl leading-[30px]">Tell us about your requirement, 
                 and we'll get in touch with you soon!</h3>
-                <div className="flex gap-4 h-[53px]">
+                <div className="flex gap-4 sm:h-[53px] flex-col sm:flex-row">
                 <input 
                 type="text"
-                className="w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
+                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
                 placeholder="Full name *" 
                 />
                 <input 
                 type="email"
-                className="w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
+                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
                 placeholder="Email *" 
                 />
                 </div>
-                <div className="flex gap-4 h-[53px]">
+                <div className="flex gap-4 sm:h-[53px] flex-col sm:flex-row">
                 <input 
                 type="text"
-                className="w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
+                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
                 placeholder="Phone Number *" 
                 />
                 <input 
                 type="email"
-                className="w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
+                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
                 placeholder="I'm Interested In *" 
                 />
                 </div>
@@ -89,7 +89,7 @@ const ContactForm = () => {
                 </textarea>
                 <div className="flex flex-col gap-2 items-end">
                 <p className="font-konsoleRegular text-sm">By sending this form I confirm that I have read and accept the <span className="text-custom-blue">Privacy Policy</span></p>
-                <button className="card-btn">
+                <button className="card-btn w-full sm:w-[173px]">
                 Send a Message
                 </button>
                 </div>

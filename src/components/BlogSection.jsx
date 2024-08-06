@@ -14,7 +14,7 @@ const BlogSection = () => {
                     gaining valuable insights into the direction we're headed and the exciting developments on the horizon.
                     </span>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 mx-auto md:mx-0">
                     <div className="flex flex-col max-w-[480px]">
                         <div>
                             <img src="/blog-img1.jpg" className="rounded-2xl" alt="stock image for blog" />
