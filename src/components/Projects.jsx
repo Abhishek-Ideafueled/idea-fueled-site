@@ -16,7 +16,7 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-10 mt-[60px] ">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:bg-project-card mx-auto bg-none md:shadow-project-card-shadow py-8 px-10 md:rounded-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:bg-project-card mx-auto bg-none md:shadow-project-card-shadow pt-4 md:py-8 md:px-10 md:rounded-2xl">
             <div className="max-w-[456px]">
               <div className="flex flex-col">
                 <h3 className="card-heading mb-4">Accounting MVP Design</h3>
@@ -66,7 +66,7 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:bg-project-card mx-auto bg-none md:shadow-project-card-shadow py-8 px-10 md:rounded-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:bg-project-card mx-auto bg-none md:shadow-project-card-shadow pt-4 md:py-8 md:px-10 md:rounded-2xl">
             <div className="max-w-[456px]">
               <div className="flex flex-col">
                 <h3 className="card-heading mb-4">
@@ -111,7 +111,7 @@ const Projects = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:bg-project-card mx-auto bg-none md:shadow-project-card-shadow py-8 px-10 md:rounded-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:bg-project-card mx-auto bg-none md:shadow-project-card-shadow pt-4 md:py-8 md:px-10 md:rounded-2xl">
             <div className="max-w-[456px]">
               <div className="flex flex-col">
                 <h3 className="card-heading mb-4">

@@ -14,7 +14,7 @@ const Testimonials = () => {
     <div className="w-full bg-light-gray">
       <div className="main-container mx-auto flex flex-col py-10 lg:py-20 gap-[60px]">
         <div className="flex flex-col gap-2 text-center">
-          <span className="font-konsoleRegular font-semibold text-custom-blue text-lg">
+          <span className="font-konsoleRegular font-semibold text-custom-blue text-base md:text-lg">
             {`Don't`} just take my words. 150+ happy clients.
           </span>
           <h2 className="heading-h2 text-custom-heading">

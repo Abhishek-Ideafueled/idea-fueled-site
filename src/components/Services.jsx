@@ -21,8 +21,9 @@ const Services = () => {
                     </div>
                     <div className="flex flex-col gap-4 p-6">
                         <h2 className="card-heading text-custom-heading">Digital Advisory</h2>
-                        <span className="text-custom-body font-konsoleRegular">
-                            Our digital advisors offer fast, strategic advice to help you solve problems, uncover opportunities, and gain a competitive advantage. It is a laser-focused workshop to help you move forward from problem to opportunities to profits.</span>
+                        <span className="text-custom-body font-konsoleRegular text-sm md:text-base">
+                            Our digital advisors offer fast, strategic advice to help you solve problems, uncover opportunities, and gain a competitive advantage.
+                             It is a laser-focused workshop to help you move forward from problem to opportunities to profits.</span>
                    <div className="flex flex-wrap gap-2">
                         <div className="services-pill">
                         Agile Process Coaching
@@ -48,7 +49,7 @@ const Services = () => {
                     </div>
                     <div className="flex flex-col gap-4 p-6">
                         <h2 className="card-heading text-custom-heading">Design</h2>
-                        <span className="text-custom-body font-konsoleRegular">
+                        <span className="text-custom-body font-konsoleRegular text-sm md:text-base">
                         Our design experts  work closely with you on your product to craft human-centered experience for customers and company success. We deliver engaging, intuitive applications and websites that make lives easier and businesses better.</span>
                    <div className="flex flex-wrap gap-2">
                         <div className="services-pill">
@@ -104,7 +105,7 @@ const Services = () => {
                     </div>
                     <div className="flex flex-col gap-4 p-6">
                         <h2 className="card-heading text-custom-heading">Marketing</h2>
-                        <span className="text-custom-body font-konsoleRegular">
+                        <span className="text-custom-body font-konsoleRegular text-sm md:text-base">
                         In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</span>
                    <div className="flex flex-wrap gap-2">
                         <div className="services-pill">

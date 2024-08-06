@@ -6,7 +6,7 @@ const BlogSection = () => {
   return (
     <div className="w-full">
         <div className="main-container mx-auto py-10 lg:py-20">
-             <div className="w-full flex flex-col gap-[60px]">
+             <div className="w-full flex flex-col gap-10 lg:gap-[60px]">
                 <div className="flex flex-col gap-6 text-center">
                     <h2 className="heading-h2">Latest at <span className="text-custom-blue">Ideafueled</span></h2>
                     <span className="sub-heading2 text-custom-body">
@@ -34,7 +34,7 @@ const BlogSection = () => {
                         <div className="font-konsoleRegular text-custom-body">
                         Sitting down with the CEO of IdeaFueled to discuss the importance of speed for startups and the value of good product design.
                         </div>
-                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold font-semibold text-custom-heading text-sm">
+                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold hover:text-custom-blue font-semibold text-custom-heading text-sm">
                       Read article
                       <span>
                       <FiArrowUpRight  size={20}/>
@@ -61,7 +61,7 @@ const BlogSection = () => {
                         <div className="font-konsoleRegular text-custom-body">
                         The story of joining forces with Seam’s co-founder and CEO to create high-quality content to boost their public launch.
                         </div>
-                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold font-semibold text-custom-heading text-sm">
+                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold hover:text-custom-blue font-semibold text-custom-heading text-sm">
                       Read article
                       <span>
                       <FiArrowUpRight  size={20}/>
