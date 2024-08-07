@@ -17,7 +17,7 @@ const Pricing = () => {
                   
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Build From Scratch</h3>
                    <span className="bg-pricing-border h-[1px]"></span> 
-                    <div className="font-konsoleRegular text-light-gray text-base leading-[26px] py-2">
+                    <div className="font-konsoleRegular text-light-gray font-normal text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Have an idea you want to launch from scratch?</li>
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> We help you with discovery, design, development and delivery.</li>
@@ -33,7 +33,7 @@ const Pricing = () => {
                   
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Your Product Team</h3>
                     <span className="bg-pricing-border h-[1px]"></span> 
-                    <div className="font-konsoleRegular text-light-gray text-base leading-[26px] py-2">
+                    <div className="font-konsoleRegular text-light-gray font-normal text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Want to accelerate product development?</li>
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> We'll be your product team, enabling you to focus on the business. Pick from the relevant resources you need - product managers, designers and developers.</li>
@@ -49,9 +49,9 @@ const Pricing = () => {
                 
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Support & Upgrades</h3>
                     <span className="bg-pricing-border h-[1px]"></span> 
-                    <div className="font-konsoleRegular text-light-gray text-base leading-[26px] py-2">
+                    <div className="font-konsoleRegular text-light-gray font-normal text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
-                            <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Have an existing app that needs support?</li>
+                            <li className="flex gap-2 "> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Have an existing app that needs support?</li>
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> We provide regular support, maintenance and upgrades with SLAs..</li>
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Its flexible - we know things change every month.</li>
                         </ul>

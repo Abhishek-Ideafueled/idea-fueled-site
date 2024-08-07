@@ -1,7 +1,19 @@
 import { FaCircleCheck } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
+import 'react-phone-number-input/style.css'
+import PhoneInput, { formatPhoneNumber } from 'react-phone-number-input';
+import { useState } from "react";
+import './ContactForm.css';
 
 const ContactForm = () => {
+
+  const [phone,setPhone] = useState("");
+
+  const formatPhoneNumberIntl=(value)=>{
+    setPhone(value);
+  }
+  
+
   return (
     <div className="w-full bg-contactform-bg">
       <div className="main-container mx-auto py-10 lg:py-20">
@@ -70,11 +82,21 @@ const ContactForm = () => {
                 />
                 </div>
                 <div className="flex gap-4 sm:h-[53px] flex-col sm:flex-row">
-                <input 
+                {/* <input 
                 type="text"
                 className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
                 placeholder="Phone Number *" 
-                />
+                /> */}
+                 <PhoneInput
+                 placeholder="Phone Number"
+        defaultCountry="US"
+        value={phone}
+        onChange={formatPhoneNumberIntl}
+        international={false}
+        // displayFormat={formatPhoneNumber}
+addInternationalOption={false}
+          className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg outline-none focus:outline-none"
+      />
                 <input 
                 type="email"
                 className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"

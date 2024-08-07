@@ -6,7 +6,7 @@ import { IoStarSharp } from "react-icons/io5";
 
 const AboutUs = () => {
   return (
-    <div className="w-full lg:h-[100vh] py-[40px] md:py-[80px] lg:py-[120px] overflow-hidden">
+    <div className="w-full py-[40px] md:py-[80px] lg:py-[120px] overflow-hidden">
       <div className="main-container mx-auto flex justify-center md:px-10 lg:px-0">
         <div className="flex flex-col md:flex-row  lg:gap-[50px] xl:gap-[100px]">
 
@@ -69,7 +69,7 @@ const AboutUs = () => {
                     Success
                   </span>
                 </div>
-                <div className="flex flex-col bg-upwork-section hover:bg-upwork-section2 ml-[-20px] z-0 py-4 pr-4 pl-10 max-w-[170px] h-[100px] star-section rounded-lg">
+                <div className="flex flex-col bg-upwork-section hover:bg-upwork-section2 ml-[-20px] z-0 py-4 pr-4 pl-10 max-w-[170px] lg:w-[170px] h-[100px] star-section rounded-lg">
                   <span className="flex justify-between mb-[14px]">
                     <img src="/upwork-logo.png" alt="upwork logo" />
                     <FiArrowUpRight

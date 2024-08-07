@@ -163,7 +163,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="font-konsoleRegular flex justify-center font-semibold text-base text-white">
-            <Link to="#" className="flex items-center gap-4"> 
+            <Link to="#" className="flex items-center gap-4 hover:text-custom-blue"> 
             View All Case Studies <FiArrowUpRight size={21}/>
         </Link></div>
         </div>

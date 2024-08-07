@@ -1,0 +1,22 @@
+.custom-input .react-international-phone-country-selector-button{
+    border: none;
+    border-right: 1px solid #D0D5DD;
+    padding-right: 8px;
+    height: 100%;
+  }
+  
+  .custom-input .react-international-phone-input{
+    border: none !important;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid blue !important ;
+  }
+
+  .PhoneInputInput{
+    outline: none;
+  }
+
+  form input,textarea{
+    outline: none;
+  }
