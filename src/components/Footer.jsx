@@ -117,37 +117,37 @@ const Footer = () => {
         </div>
         </div>
             </div>
-            <div className="">
+            <div className="footer-links">
             <ul className="flex flex-col text-white gap-[10px]">
                 <h2 className="font-narwaBold font-bold text-lg leading-[22px] md:text-xl md:leading-[25px]">Company</h2>
-                <li className="font-konsoleRegular">About Us</li>
-                <li className="font-konsoleRegular">Career</li>
-                <li className="font-konsoleRegular">Blogs</li>
+             <Link to='#'> <li className="font-konsoleRegular">About Us</li></Link>  
+             <Link to='#'><li className="font-konsoleRegular">Career</li></Link> 
+             <Link to='#'><li className="font-konsoleRegular">Blogs</li></Link> 
             </ul>
             </div>
-            <div className="">
+            <div className="footer-links">
             <ul className="flex flex-col text-white gap-[10px]">
                 <h2 className="font-narwaBold font-bold text-lg leading-[22px] md:text-xl md:leading-[25px]">Services</h2>
-                <li className="font-konsoleRegular">Digital Advisory</li>
-                <li className="font-konsoleRegular"> Design Services</li>
-                <li className="font-konsoleRegular"> Web Development</li>
-                <li className="font-konsoleRegular">  Marketing</li>
+                <Link to='#'>  <li className="font-konsoleRegular">Digital Advisory</li></Link>
+                <Link to='#'>  <li className="font-konsoleRegular">Design Services</li></Link>
+                <Link to='#'>  <li className="font-konsoleRegular">Web Development</li></Link>
+                <Link to='#'> <li className="font-konsoleRegular">  Marketing</li></Link>
             </ul>
             </div>
-            <div className="">
+            <div className="footer-links">
             <ul className="flex flex-col text-white gap-[10px]">
                 <h2 className="font-narwaBold font-bold text-lg leading-[22px] md:text-xl md:leading-[25px]">Contact Us</h2>
-                <li className="font-konsoleRegular"><span className="text-[#B3B3B3]">Email:</span> hr@ideafueled.com</li>
-                <li className="font-konsoleRegular"> <span className="text-[#B3B3B3]">Call:</span> +91 - 9878452XXX</li>
-                <li className="font-konsoleRegular flex flex-col">
-                <span className="text-[#B3B3B3]">Address <span className="text-custom-blue text-sm"><Link to="#">(view on map)</Link></span></span>
+                <Link to='#'> <li className="font-konsoleRegular"><span className="text-[#B3B3B3]">Email:</span> hr@ideafueled.com</li></Link>
+                <Link to='#'> <li className="font-konsoleRegular"> <span className="text-[#B3B3B3]">Call:</span> +91 - 9878452XXX</li></Link>
+                 <li className="font-konsoleRegular flex flex-col">
+                 <span className="text-[#B3B3B3]">Address <span className="text-custom-blue text-sm"><Link to="#">(view on map)</Link></span></span>
                 Plot No.C, 130, Sector 82,<br /> JLPL Industrial Area, SAS <br /> Nagar, Punjab 140308
                 </li>
             </ul>
             </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 justify-between items-center py-4 lg:py-10 font-konsoleRegular text-sm text-white">
-        <span><span className="text-[#B3B3B3]">©</span>2024 — All Rights Reserved By Idea Fueled</span>
+        <span>©2024 — All Rights Reserved By Idea Fueled</span>
         <span>Privacy Policy   |  Terms & Conditions</span>
         </div>  
       </div>
