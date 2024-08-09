@@ -42,7 +42,7 @@ const AboutUs = () => {
                     Projects Delivered
                   </span>
                 </div>
-                <div className="flex flex-col bg-clutch-section hover:bg-clutch-section2 ml-[-20px] z-0 py-4 pr-4 pl-10 max-w-[170px] h-[100px] star-section rounded-lg">
+                <div className="flex flex-col bg-clutch-section cursor-pointer hover:bg-clutch-section2 transition-all duration-300 ease-in ml-[-20px] z-0 py-4 pr-4 pl-10 max-w-[170px] h-[100px] star-section rounded-lg">
                   <span className="flex justify-between mb-[14px]">
                     <img src="/clutch-logo.png" alt="clutch-logo" />
                     <FiArrowUpRight
@@ -69,7 +69,7 @@ const AboutUs = () => {
                     Success
                   </span>
                 </div>
-                <div className="flex flex-col bg-upwork-section hover:bg-upwork-section2 ml-[-20px] z-0 py-4 pr-4 pl-10 max-w-[170px] lg:w-[170px] h-[100px] star-section rounded-lg">
+                <div className="flex flex-col bg-upwork-section hover:bg-upwork-section2 transition-all duration-300 ease-in cursor-pointer ml-[-20px] z-0 py-4 pr-4 pl-10 max-w-[170px] lg:w-[170px] h-[100px] star-section rounded-lg">
                   <span className="flex justify-between mb-[14px]">
                     <img src="/upwork-logo.png" alt="upwork logo" />
                     <FiArrowUpRight

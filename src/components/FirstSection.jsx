@@ -18,7 +18,7 @@ const FirstSection = () => {
                 <span>Book a Call</span>
                 <span><FiArrowUpRight  size={20}/></span>
             </button>
-            <button className="flex items-center gap-2 bg-transparent rounded-lg w-[142px] h-[48px] justify-center border-[1.5px] hover:bg-[#FFED00] hover:text-custom-heading border-[#FFED00]  text-[#FFED00] font-konsoleRegular font-semibold transition-colors duration-150 delay-75" >
+            <button className="flex items-center gap-2 bg-transparent rounded-lg w-[142px] h-[48px] justify-center border-[1.5px] hover:border-white hover:text-white  border-[#FFED00]  text-[#FFED00] font-konsoleRegular font-semibold transition-all duration-250" >
             <span>Email Us</span>
             <span><FiArrowUpRight  size={20}/></span>
             </button>

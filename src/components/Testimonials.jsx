@@ -302,7 +302,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <div className="w-full flex justify-center gap-4 mt-12 absolute bottom-[-30px] h-[100px]">
+            <div className="w-full flex justify-center gap-4 mt-12 absolute bottom-[-50px] h-[100px]">
         <div className="btn-prev bg-custom-blue flex items-center justify-center" ref={prevRef}>  
         </div>
         <div className="btn-next bg-custom-blue flex items-center justify-center" ref={nextRef}></div>
