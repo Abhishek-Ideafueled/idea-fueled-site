@@ -14,6 +14,8 @@ export default {
       fontFamily:{
         konsoleRegular: ["Konsole-Regular"],
         konsoleRegular2: ["Konsole-Regular2"],
+        konsoleSemibold:["Konsole-Semibold"],
+        konsoleBold:["Konsole-Bold"],
         narwaSemiBold: ["Narwa-SemiBold"],
         narwaBold: ["Narwa-Bold"],
       },
@@ -26,7 +28,7 @@ export default {
         'pills-bg':'#363A3E',
       },
       backgroundImage:{
-          'hero-section' : "linear-gradient(114.13deg, #2FBEC2 -5.35%, #2E82A3 22.85%, #301065 89.65%)",
+          // 'hero-section' : "linear-gradient(114.13deg, #2FBEC2 -5.35%, #2E82A3 22.85%, #1D71B8 89.65%)",
           'clutch-section':"linear-gradient(90deg, #F8FAFB 4.25%, #FFF2F1 101.43%)",
           'clutch-section2':"linear-gradient(90deg, #F8FAFB 4.25%, #FEE2E0 101.43%)",
           'upwork-section':"linear-gradient(90deg, #F8FAFB 4.25%, #EBF7E9 101.43%)",

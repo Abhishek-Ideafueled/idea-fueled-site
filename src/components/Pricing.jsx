@@ -8,7 +8,7 @@ const Pricing = () => {
         <div className="main-container mx-auto py-10 lg:py-20">
             <div className="flex flex-col gap-6 text-center">
                 <h2 className="heading-h2 text-white">Pricing</h2>
-                <span className="sub-heading text-light-gray">
+                <span className="sub-heading2 text-light-gray">
                 We collaborate in a way that works for you
                 </span>
             </div>
