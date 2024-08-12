@@ -15,7 +15,7 @@ const BlogSection = () => {
                     </span>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 mx-auto md:mx-0">
-                    <div className="flex flex-col max-w-[480px] hover:shadow-card-shadow rounded-2xl hover:border-[1px] hover:border-[#EEEEEE]">
+                    <div className="flex flex-col max-w-[480px] hover:shadow-card-shadow rounded-2xl border-[1px] border-transparent hover:border-[#EEEEEE] transition-all duration-300 delay-100">
                         <div>
                             <img src="/blog-img1.jpg" className="rounded-2xl" alt="stock image for blog" />
                         </div>
@@ -42,7 +42,7 @@ const BlogSection = () => {
                       </Link>
                         </div>
                     </div>
-                    <div className="flex flex-col max-w-[480px] hover:shadow-card-shadow rounded-2xl hover:border-[1px] hover:border-[#EEEEEE]">
+                    <div className="flex flex-col max-w-[480px] hover:shadow-card-shadow rounded-2xl border-[1px] border-transparent hover:border-[#EEEEEE] transition-all duration-300 delay-100">
                         <div>
                             <img src="/blog-img2.jpg" className="rounded-2xl" alt="stock image for blog" />
                         </div>
