@@ -1,4 +1,4 @@
-
+import './Services.css';
 
 const Services = () => {
   return (
@@ -13,9 +13,9 @@ const Services = () => {
                 </span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div className="flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
+                <div className="card-container flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
                     <div className=" h-[250px] relative rounded-t-2xl">
-                        <img src="/digital-advisory.jpg" alt="digital advisory stock image" className="w-full h-full rounded-t-2xl " />
+                        <img src="/digital-advisory.jpg" alt="digital advisory stock image" className="w-full h-full rounded-t-2xl" />
                         <div className="absolute inset-0 bg-black/10 rounded-t-2xl">
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const Services = () => {
                      </div>
                    
                 </div>
-                <div className="flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
+                <div className="card-container flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
                     <div className=" h-[250px] relative rounded-t-2xl">
                         <img src="/design-stock.jpg" alt="design stock image" className="w-full h-full rounded-t-2xl " />
                         <div className="absolute inset-0 bg-black/20 rounded-t-2xl">
@@ -71,7 +71,7 @@ const Services = () => {
                      </div>
                    
                 </div>
-                <div className="flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
+                <div className="card-container flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
                     <div className=" h-[250px] relative rounded-t-2xl">
                         <img src="/development-stock.jpg" alt="development stock image" className="w-full h-full rounded-t-2xl " />
                         <div className="absolute inset-0 bg-black/10 rounded-t-2xl">
@@ -97,7 +97,7 @@ const Services = () => {
                      </div>
                    
                 </div>
-                <div className="flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
+                <div className="card-container flex flex-col max-w-[480px] bg-white shadow-services-card-shadow rounded-2xl">
                     <div className=" h-[250px] relative rounded-t-2xl">
                         <img src="/marketing-stock.jpg" alt="marketing stock image" className="w-full h-full rounded-t-2xl " />
                         <div className="absolute inset-0 bg-black/20 rounded-t-2xl">
