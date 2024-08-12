@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
 import { IoStarSharp } from "react-icons/io5";
+import VideoModal from "./Modal/VideoModal";
 
 const AboutUs = () => {
+
+  const [isOpen,setIsOpen] = useState(false);
+
+ 
+  const closeModal =()=>{
+      setIsOpen(false);
+  }
+
   return (
-    <div className="w-full py-[40px] md:py-[80px] lg:py-[120px] overflow-hidden">
+    <>
+    <div className=" relative w-full py-[40px] md:py-[80px] lg:py-[120px] overflow-hidden">
       <div className="main-container mx-auto flex justify-center md:px-10 lg:px-0">
         <div className="flex flex-col md:flex-row  lg:gap-[50px] xl:gap-[100px]">
 
@@ -107,15 +117,29 @@ const AboutUs = () => {
 </defs>
 </svg>
 </span>
-<div className="flex flex-col font-konsoleRegular font-semibold text-white text-sm">
+<div 
+onClick={()=>setIsOpen(true)}
+className="flex flex-col font-konsoleRegular font-semibold text-white text-sm hover:opacity-80" >
     <span>Watch Video</span>
-    <span className="font-normal text-[12px]">1:10 min</span>
+    <span className="font-normal text-[12px] font-konsoleRegular">1:10 min</span>
 </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    {
+   
+        isOpen && <VideoModal closeModal={closeModal}>
+         
+          <iframe  
+          className='w-full h-full'
+          src="https://www.youtube.com/embed/Hgg7M3kSqyE?si=ELceV7PVyNzcSMfJ" frameBorder="0"
+          title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen
+          ></iframe>
+        </VideoModal>
+      }
+    </>
   );
 };
 
