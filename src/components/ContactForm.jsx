@@ -2,13 +2,14 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 import 'react-phone-number-input/style.css'
 import PhoneInput, { formatPhoneNumber } from 'react-phone-number-input';
-import { useState } from "react";
+import { act, useState } from "react";
 import './ContactForm.css';
 import { Link } from "react-router-dom";
 
 const ContactForm = () => {
 
   const [phone,setPhone] = useState("");
+  const [active,setActive] = useState(null);
 
   const formatPhoneNumberIntl=(value)=>{
     setPhone(value);
@@ -72,13 +73,15 @@ const ContactForm = () => {
                 and we'll get in touch with you soon!</h3>
                 <div className="flex gap-4 sm:h-[53px] flex-col sm:flex-row">
                 <input 
+                onClick={()=>setActive(null)}
                 type="text"
-                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
+                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg outline-custom-blue focus:border-custom-blue"
                 placeholder="Full name *" 
                 />
                 <input 
+                onClick={()=>setActive(null)}
                 type="email"
-                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
+                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg outline-custom-blue focus:border-custom-blue"
                 placeholder="Email *" 
                 />
                 </div>
@@ -96,22 +99,27 @@ const ContactForm = () => {
         international={false}
         // displayFormat={formatPhoneNumber}
 addInternationalOption={false}
-          className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg outline-none focus:outline-none"
+          className={`w-full sm:w-1/2 ${active ===1 ?'border-[1.5px] border-custom-blue': 'border-[1.5px] border-[#DADADA]'} p-4 rounded-lg phone-input-custom`}
+          onClick={()=>setActive(1)}
       />
                 <input 
                 type="email"
-                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg"
+                className="w-full sm:w-1/2 border-[1.5px] border-[#DADADA] p-4 rounded-lg outline-custom-blue focus:border-custom-blue"
                 placeholder="I'm Interested In *" 
+                onClick={()=>setActive(null)}
                 />
                 </div>
                 <textarea name="" id="" rows={4}
                 placeholder="Type your message here"
-                className="border-[1.5px] border-[#DADADA] rounded-lg p-4"
+                className="border-[1.5px] border-[#DADADA] rounded-lg p-4 outline-custom-blue focus:border-custom-blue"
+                onClick={()=>setActive(null)}
                 >
 
                 </textarea>
                 <div className="flex flex-col gap-2 items-end">
-                <p className="font-konsoleRegular text-sm">By sending this form I confirm that I have read and accept the <span className="text-custom-blue">Privacy Policy</span></p>
+                <p className="font-konsoleRegular text-sm">By sending this form I confirm that I have read and accept the 
+                  <span className="text-custom-blue">
+                    <Link to="#">Privacy Policy</Link></span></p>
                 <button className="card-btn w-full sm:w-[173px]">
                 Send a Message
                 </button>
