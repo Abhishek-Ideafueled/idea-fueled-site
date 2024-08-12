@@ -1,6 +1,7 @@
 
 import { FaCircleCheck } from "react-icons/fa6"
-import { FiArrowUpRight } from "react-icons/fi"
+import { FiArrowUpRight } from "react-icons/fi";
+import './Homepage.css';
 
 const Pricing = () => {
   return (
@@ -13,7 +14,7 @@ const Pricing = () => {
                 </span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mt-[60px] gap-6">
-                <div className="flex flex-col bg-pricing-cardbg pricing-card-container gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
+                <div className="flex flex-col bg-pricing-cardbg pricing-card-container gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover transition-all ease-in-out duration-300 delay-100">
                   
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Build From Scratch</h3>
                    <span className="bg-pricing-border hover:bg-pricing-border-hover h-[1px] border-container"></span> 
@@ -29,7 +30,7 @@ const Pricing = () => {
                     Book a Call <FiArrowUpRight  size={20}/>
                     </button>
                 </div>
-                <div className="flex flex-col bg-pricing-cardbg pricing-card-container gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
+                <div className="flex flex-col bg-pricing-cardbg pricing-card-container gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover transition-all ease-in-out duration-300 delay-100">
                   
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Your Product Team</h3>
                     <span className="bg-pricing-border hover:bg-pricing-border-hover h-[1px] border-container"></span> 
@@ -45,7 +46,7 @@ const Pricing = () => {
                     Book a Call <FiArrowUpRight  size={20}/>
                     </button>
                 </div>
-                <div className="flex flex-col bg-pricing-cardbg pricing-card-container gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
+                <div className="flex flex-col bg-pricing-cardbg pricing-card-container gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover transition-all ease-in-out duration-300 delay-100">
                 
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Support & Upgrades</h3>
                     <span className="bg-pricing-border hover:bg-pricing-border-hover h-[1px] border-container"></span> 
