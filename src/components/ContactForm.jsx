@@ -4,6 +4,7 @@ import 'react-phone-number-input/style.css'
 import PhoneInput, { formatPhoneNumber } from 'react-phone-number-input';
 import { useState } from "react";
 import './ContactForm.css';
+import { Link } from "react-router-dom";
 
 const ContactForm = () => {
 
@@ -57,9 +58,9 @@ const ContactForm = () => {
                       puneet@ideafueled.com
                     </p>
                   </span>
-                  <p className="flex items-center gag-2 font-narwaSemiBold font-semibold">
+                  <Link className="flex items-center gag-2 font-narwaSemiBold font-semibold hover:underline">
                     Book a call <FiArrowUpRight size={20} />
-                  </p>
+                  </Link>
                 </div>
               </div>
             </div>

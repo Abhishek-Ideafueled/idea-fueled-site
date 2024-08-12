@@ -15,7 +15,7 @@ const BlogSection = () => {
                     </span>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 mx-auto md:mx-0">
-                    <div className="flex flex-col max-w-[480px]">
+                    <div className="flex flex-col max-w-[480px] hover:shadow-card-shadow rounded-2xl hover:border-[1px] hover:border-[#EEEEEE]">
                         <div>
                             <img src="/blog-img1.jpg" className="rounded-2xl" alt="stock image for blog" />
                         </div>
@@ -34,7 +34,7 @@ const BlogSection = () => {
                         <div className="font-konsoleRegular text-custom-body">
                         Sitting down with the CEO of IdeaFueled to discuss the importance of speed for startups and the value of good product design.
                         </div>
-                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold hover:text-custom-blue font-semibold text-custom-heading text-sm">
+                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold transition-all ease-in duration-200 hover:text-custom-blue font-semibold text-custom-heading text-sm">
                       Read article
                       <span>
                       <FiArrowUpRight  size={20}/>
@@ -42,7 +42,7 @@ const BlogSection = () => {
                       </Link>
                         </div>
                     </div>
-                    <div className="flex flex-col max-w-[480px]">
+                    <div className="flex flex-col max-w-[480px] hover:shadow-card-shadow rounded-2xl hover:border-[1px] hover:border-[#EEEEEE]">
                         <div>
                             <img src="/blog-img2.jpg" className="rounded-2xl" alt="stock image for blog" />
                         </div>
@@ -61,7 +61,7 @@ const BlogSection = () => {
                         <div className="font-konsoleRegular text-custom-body">
                         The story of joining forces with Seam’s co-founder and CEO to create high-quality content to boost their public launch.
                         </div>
-                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold hover:text-custom-blue font-semibold text-custom-heading text-sm">
+                      <Link to="#" className="flex items-center gap-2 font-narwaSemiBold transition-all ease-in duration-200 hover:text-custom-blue font-semibold text-custom-heading text-sm">
                       Read article
                       <span>
                       <FiArrowUpRight  size={20}/>
