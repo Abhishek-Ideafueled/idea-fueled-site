@@ -1,3 +1,4 @@
 .star-section:hover svg{
-    display: block ;
+    opacity: 100;
+    transition: all 0.3s ease-in;
 }

@@ -229,7 +229,7 @@ const Header = () => {
                   
                 </div>
             </div>
-            <button className="bg-custom-blue hover:bg-active-blue text-white font-narwaSemiBold text-[16px] leading-[1.45rem] rounded-lg h-[47px] w-[107px]">
+            <button className="bg-custom-blue hover:bg-active-blue transition-all ease-in duration-300 text-white font-narwaSemiBold text-[16px] leading-[1.45rem] rounded-lg h-[47px] w-[107px]">
                 Contact
             </button>
         </div>

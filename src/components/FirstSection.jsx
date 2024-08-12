@@ -14,11 +14,11 @@ const FirstSection = () => {
           </div>
         </div>
         <div className="flex justify-center items-center gap-2 md:gap-4">
-            <button className="flex items-center gap-2 bg-[#FFED00] hover:bg-transparent hover:border-[1.5px] border-[#FFED00]  hover:text-[#FFED00] rounded-lg w-[171px] h-[48px] justify-center  text-custom-heading font-konsoleRegular font-semibold transition-colors duration-150 delay-75">
+            <button className="flex items-center gap-2 bg-[#FFED00] hover:bg-transparent hover:border-[1.5px] border-[#FFED00]  hover:text-[#FFED00] rounded-lg w-[171px] h-[48px] justify-center  text-custom-heading font-konsoleRegular font-semibold transition-colors duration-300 delay-75">
                 <span>Book a Call</span>
                 <span><FiArrowUpRight  size={20}/></span>
             </button>
-            <button className="flex items-center gap-2 bg-transparent rounded-lg w-[142px] h-[48px] justify-center border-[1.5px] hover:border-white hover:text-white  border-[#FFED00]  text-[#FFED00] font-konsoleRegular font-semibold transition-all duration-250" >
+            <button className="flex items-center gap-2 bg-transparent rounded-lg w-[142px] h-[48px] justify-center border-[1.5px] hover:border-white hover:text-white  border-[#FFED00]  text-[#FFED00] font-konsoleRegular font-semibold transition-all duration-300 delay-75" >
             <span>Email Us</span>
             <span><FiArrowUpRight  size={20}/></span>
             </button>

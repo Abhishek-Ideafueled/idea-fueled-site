@@ -52,11 +52,11 @@ const AboutUs = () => {
                     Projects Delivered
                   </span>
                 </div>
-                <div className="flex flex-col bg-clutch-section cursor-pointer hover:bg-clutch-section2 transition-all ease-in duration-300  ml-[-20px] z-0 py-4 pr-4 pl-10 w-[252px] sm:max-w-[170px] h-[100px] star-section rounded-lg">
+                <div className="flex flex-col bg-clutch-section cursor-pointer hover:bg-clutch-section2 transition-all ease-in duration-300 delay-150  ml-[-20px] z-0 py-4 pr-4 pl-10 w-[252px] sm:max-w-[170px] h-[100px] star-section rounded-lg">
                   <span className="flex justify-between mb-[14px]">
                     <img src="/clutch-logo.png" alt="clutch-logo" />
                     <FiArrowUpRight
-                      className="hidden text-[#EB594E]"
+                      className="opacity-0 text-[#EB594E]"
                       size={20}
                     />
                   </span>
@@ -79,11 +79,11 @@ const AboutUs = () => {
                     Success
                   </span>
                 </div>
-                <div className="flex flex-col bg-upwork-section hover:bg-upwork-section2 transition-all ease-in duration-300  cursor-pointer ml-[-20px] z-0 py-4 pr-4 pl-10  w-[252px] sm:max-w-[170px] lg:w-[170px] h-[100px] star-section rounded-lg">
+                <div className="flex flex-col bg-upwork-section hover:bg-upwork-section2 transition-all ease-in duration-300 delay-200  cursor-pointer ml-[-20px] z-0 py-4 pr-4 pl-10  w-[252px] sm:max-w-[170px] lg:w-[170px] h-[100px] star-section rounded-lg">
                   <span className="flex justify-between mb-[14px]">
                     <img src="/upwork-logo.png" alt="upwork logo" />
                     <FiArrowUpRight
-                      className="hidden text-[#F9B52C]"
+                      className="opacity-0 text-[#F9B52C]"
                       size={20}
                     />
                   </span>
