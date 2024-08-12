@@ -8,6 +8,7 @@
 .swiper-pagination-bullet{
     width: 16px;
     height: 16px;
+    background-color: #1D71B8;
 }
 
 .slider-outer .btn-prev{
@@ -24,7 +25,7 @@
 
 
 .btn-prev, .btn-next{
-    background: #EFBC43;
+    /* background-color: yellow; */
     color: white;
     opacity:1;
     z-index: 10;

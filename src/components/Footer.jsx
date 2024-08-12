@@ -6,15 +6,16 @@ const Footer = () => {
     <div className="w-full bg-custom-heading">
       <div className="main-container mx-auto">
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-2 py-6 lg:py-10 items-center justify-between">
+        <div className="flex flex-col md:flex-row py-6 lg:py-10 items-center gap-2 md:justify-between w-full">
           <div className="text-white font-narwaBold font-bold text-xl leading-[25px] md:text-2xl md:leading-[30px]">
-            Subscribe to our newsletter to <br  className="hidden lg:block"/>
-            stay in touch with the latest.
+            Subscribe to our newsletter to stay in touch with the latest.
+            {/* <br  className="hidden lg:block"/> */}
+           
           </div>
-          <div className="flex flex-col sm:flex-row gap-2 items-center justify-center w-full">
+          <div className="flex flex-col sm:flex-row gap-2 items-center justify-center md:justify-end w-full">
             <input
               type="text"
-              className="p-4 rounded-lg border-custom-body border-[1.5px] bg-custom-heading w-full sm:w-[380px]"
+              className="p-4 rounded-lg border-custom-body border-[1.5px] bg-custom-heading w-full sm:max-w-[380px]"
               placeholder="Your email address"
             />
             <button className="card-btn h-[56px] w-full sm:w-[122px]">Subscribe</button>
@@ -95,21 +96,21 @@ const Footer = () => {
         </div>
         <p className="font-konsoleRegular text-base text-white">Together towards Growth</p>
         <div className="flex gap-4 items-center mt-10">
-        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center">
+        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center cursor-pointer">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fillRule="evenodd" clipRule="evenodd" d="M0.39801 9.69082C0.39801 4.39582 4.70601 0.0908203 9.99801 0.0908203C15.291 0.0908203 19.598 4.39582 19.598 9.69082C19.598 14.9828 15.291 19.2878 9.99801 19.2878C4.70601 19.2878 0.39801 14.9828 0.39801 9.68982V9.69082ZM8.07701 1.73082C8.30101 2.03482 9.79201 4.06082 11.135 6.53282C14.052 5.43882 15.286 3.77982 15.433 3.56882C13.9361 2.23682 12.0018 1.50152 9.99801 1.50282C9.33601 1.50282 8.69301 1.58382 8.07701 1.73082ZM6.51301 2.28382C5.36444 2.82507 4.35683 3.62498 3.56916 4.62084C2.78149 5.61671 2.23516 6.78147 1.97301 8.02382H2.09401C2.81501 8.02382 5.98601 7.97282 9.55401 7.02382C8.62693 5.39014 7.61211 3.80782 6.51401 2.28382H6.51301ZM12.313 8.93982C12.374 9.07982 12.433 9.21982 12.491 9.36082C15.221 9.01782 17.931 9.56782 18.201 9.62682C18.1854 7.76287 17.5318 5.9605 16.349 4.51982C16.176 4.75382 14.804 6.51382 11.77 7.75182C11.961 8.14182 12.144 8.53782 12.314 8.93982H12.313ZM10.229 8.28382C6.60001 9.36882 3.06701 9.45082 2.06001 9.45082C1.93001 9.45082 1.84301 9.44882 1.80201 9.44882C1.80001 9.53382 1.80001 9.61582 1.80001 9.69882C1.80001 11.8068 2.59701 13.7298 3.90701 15.1808C4.09201 14.8648 6.34401 11.1388 10.572 9.77382C10.678 9.73682 10.787 9.70382 10.893 9.67482C10.6859 9.20448 10.4645 8.7406 10.229 8.28382ZM12.984 10.6518C14.058 13.5998 14.494 15.9978 14.579 16.4968C15.5086 15.8692 16.2999 15.0581 16.9042 14.1132C17.5085 13.1684 17.9131 12.1099 18.093 11.0028C17.81 10.9128 15.553 10.2408 12.984 10.6518ZM4.96401 16.1698C6.40189 17.2923 8.17388 17.9016 9.99801 17.9008C11.0992 17.9019 12.1893 17.6808 13.203 17.2508C13.08 16.5308 12.603 14.0238 11.452 11.0328L11.398 11.0508C6.77201 12.6628 5.11201 15.8678 4.96401 16.1698Z" fill="white"/>
 </svg>
 
         </div>
-        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center"><svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center cursor-pointer"><svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fillRule="evenodd" clipRule="evenodd" d="M0.445007 0.000976562H6.75201C8.34601 0.0249766 9.47201 0.513976 10.136 1.46598C10.533 2.04998 10.735 2.74598 10.735 3.56398C10.735 4.40198 10.533 5.07398 10.13 5.58698C9.90601 5.87298 9.57401 6.13398 9.13501 6.36798C9.80201 6.62198 10.303 7.02798 10.643 7.58098C10.98 8.13398 11.151 8.80498 11.151 9.59498C11.151 10.409 10.958 11.14 10.569 11.786C10.3321 12.2018 10.0182 12.5686 9.64401 12.867C9.21317 13.2093 8.70793 13.4457 8.16901 13.557C7.5635 13.685 6.94589 13.7471 6.32701 13.742H0.445007V0.000976562ZM3.04701 2.38698V5.41698H6.21701C6.78701 5.41698 7.24601 5.30398 7.59901 5.07698C7.95301 4.84898 8.12901 4.44698 8.12901 3.87098C8.12901 3.23098 7.89701 2.80698 7.42901 2.60198C7.02501 2.45698 6.51201 2.38698 5.88601 2.38698H3.04701ZM3.04701 7.69298V11.359H6.21501C6.78101 11.359 7.22201 11.279 7.53701 11.116C8.11001 10.818 8.39601 10.243 8.39601 9.40098C8.39601 8.68498 8.11701 8.19598 7.56501 7.92798C7.25301 7.77798 6.81901 7.69998 6.25901 7.69298H3.04701ZM13.945 2.35298H19.537V0.642976H13.945V2.35298ZM13.324 4.71898C14.211 3.78198 15.361 3.31298 16.776 3.31298C17.616 3.31298 18.373 3.47098 19.046 3.78798C19.718 4.10498 20.274 4.60798 20.712 5.29098C21.11 5.89498 21.366 6.59598 21.483 7.39098C21.553 7.85998 21.578 8.53098 21.565 9.40898H14.536C14.574 10.429 14.91 11.143 15.544 11.555C15.931 11.807 16.396 11.937 16.936 11.937C17.513 11.937 17.978 11.782 18.338 11.47C18.5552 11.2731 18.7312 11.0352 18.856 10.77H21.435C21.365 11.373 21.053 11.987 20.499 12.607C19.634 13.595 18.424 14.089 16.867 14.089C15.6189 14.1023 14.4092 13.6576 13.467 12.839C12.486 12.007 11.995 10.649 11.995 8.77298C11.995 7.01098 12.438 5.66098 13.324 4.71898ZM15.268 6.08198C14.914 6.47198 14.688 6.99498 14.597 7.65498H18.944C18.897 6.94998 18.675 6.41598 18.272 6.04898C17.87 5.68498 17.37 5.50198 16.774 5.50198C16.127 5.50198 15.624 5.69498 15.268 6.08198Z" fill="white"/>
 </svg>
 </div>
-        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center cursor-pointer"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.1625 0.180664H14.3688L9.55002 5.68691L15.2188 13.1807H10.7813L7.30315 8.63691L3.32815 13.1807H1.11877L6.2719 7.29004L0.837524 0.180664H5.38752L8.52815 4.33379L12.1625 0.180664ZM11.3875 11.8619H12.6094L4.7219 1.43066H3.4094L11.3875 11.8619Z" fill="white"/>
 </svg>
 </div>
-        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center">
+        <div className="w-10 h-10 bg-[#2F2F2F] rounded-full flex items-center justify-center cursor-pointer">
         <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.15499 14.0829H0.954987V4.48293H4.15499V14.0829ZM2.55499 3.20293C2.13064 3.20293 1.72367 3.03436 1.42362 2.7343C1.12356 2.43424 0.954987 2.02728 0.954987 1.60293C0.954987 1.17858 1.12356 0.771617 1.42362 0.471559C1.72367 0.171501 2.13064 0.00292969 2.55499 0.00292969C2.97933 0.00292969 3.3863 0.171501 3.68636 0.471559C3.98642 0.771617 4.15499 1.17858 4.15499 1.60293C4.15499 2.02728 3.98642 2.43424 3.68636 2.7343C3.3863 3.03436 2.97933 3.20293 2.55499 3.20293ZM15.675 14.0829H12.6V9.41093C12.6 8.29693 12.579 6.86393 11 6.86393C9.39799 6.86393 9.15199 8.07693 9.15199 9.33093V14.0829H6.07599V4.47593H9.02899V5.78893H9.07099C9.48099 5.03393 10.486 4.23793 11.983 4.23793C15.1 4.23793 15.676 6.22793 15.676 8.81393V14.0839L15.675 14.0829Z" fill="white"/>
 </svg>
@@ -140,15 +141,19 @@ const Footer = () => {
                 <Link to='#'> <li className="font-konsoleRegular"><span className="text-[#B3B3B3]">Email:</span> hr@ideafueled.com</li></Link>
                 <Link to='#'> <li className="font-konsoleRegular"> <span className="text-[#B3B3B3]">Call:</span> +91 - 9878452XXX</li></Link>
                  <li className="font-konsoleRegular flex flex-col">
-                 <span className="text-[#B3B3B3]">Address <span className="text-custom-blue text-sm"><Link to="#">(view on map)</Link></span></span>
+                 <span className="text-[#B3B3B3]">Address <span className="text-custom-blue text-sm hover:underline"><Link to="#">(view on map)</Link></span></span>
                 Plot No.C, 130, Sector 82, JLPL Industrial Area, SAS  Nagar, Punjab 140308
                 </li>
             </ul>
             </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 sm:gap-0 justify-between items-center py-4 lg:py-10 font-konsoleRegular text-sm text-white">
-        <span>©2024 — All Rights Reserved By Idea Fueled</span>
-        <span>Privacy Policy   |  Terms & Conditions</span>
+        <span >
+          ©2024 — All Rights Reserved By Idea Fueled
+          </span>
+          <span >
+        <Link to="#" className="hover:text-active-blue">Privacy Policy </Link>  |<Link className="hover:text-active-blue">  Terms & Conditions</Link>
+          </span>
         </div>  
       </div>
     </div>

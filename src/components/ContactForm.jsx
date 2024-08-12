@@ -54,7 +54,7 @@ const ContactForm = () => {
                     <h4 className="font-narwaBold font-bold  text-xl leading-[25px]">
                       Puneet Chopra
                     </h4>
-                    <p className="font-konsole font-base">
+                    <p className="font-konsole font-base cursor-pointer" onClick={() => window.location.href = 'mailto:puneet@ideafueled.com'}>
                       puneet@ideafueled.com
                     </p>
                   </span>
