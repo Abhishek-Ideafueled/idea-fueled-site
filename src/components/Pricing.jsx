@@ -16,7 +16,7 @@ const Pricing = () => {
                 <div className="flex flex-col bg-pricing-cardbg gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
                   
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Build From Scratch</h3>
-                   <span className="bg-pricing-border h-[1px]"></span> 
+                   <span className="bg-pricing-border hover:bg-pricing-border-hover h-[1px]"></span> 
                     <div className="font-konsoleRegular text-light-gray font-normal text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Have an idea you want to launch from scratch?</li>
@@ -32,7 +32,7 @@ const Pricing = () => {
                 <div className="flex flex-col bg-pricing-cardbg gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
                   
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Your Product Team</h3>
-                    <span className="bg-pricing-border h-[1px]"></span> 
+                    <span className="bg-pricing-border hover:bg-pricing-border-hover h-[1px]"></span> 
                     <div className="font-konsoleRegular text-light-gray font-normal text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2"> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Want to accelerate product development?</li>
@@ -48,7 +48,7 @@ const Pricing = () => {
                 <div className="flex flex-col bg-pricing-cardbg gap-4 px-4 py-6 rounded-2xl hover:cursor-pointer hover:bg-pricing-hover">
                 
                     <h3 className="font-narwaBold text-2xl leading-[30px] text-white font-bold text-center">Support & Upgrades</h3>
-                    <span className="bg-pricing-border h-[1px]"></span> 
+                    <span className="bg-pricing-border hover:bg-pricing-border-hover h-[1px]"></span> 
                     <div className="font-konsoleRegular text-light-gray font-normal text-base leading-[26px] py-2">
                         <ul className="flex flex-col gap-[10px]">
                             <li className="flex gap-2 "> <span className="w-[20px] h-[20px]"><FaCircleCheck className="mt-[5px] text-[#31C03F]"  size={20}/></span> Have an existing app that needs support?</li>

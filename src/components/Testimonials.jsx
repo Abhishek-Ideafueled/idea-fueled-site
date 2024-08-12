@@ -14,7 +14,7 @@ const Testimonials = () => {
     <div className="w-full bg-light-gray">
       <div className="main-container mx-auto flex flex-col py-10 lg:py-20 gap-[60px]">
         <div className="flex flex-col gap-2 text-center">
-          <span className="font-konsoleRegular font-semibold text-custom-blue text-base md:text-lg">
+          <span className="font-konsoleSemibold font-semibold text-custom-blue text-base md:text-lg">
             {`Don't`} just take my words. 150+ happy clients.
           </span>
           <h2 className="heading-h2 text-custom-heading">
@@ -303,9 +303,9 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
             <div className="w-full flex justify-center gap-4 mt-12 absolute bottom-[-50px] h-[100px]">
-        <div className="btn-prev bg-custom-blue flex items-center justify-center" ref={prevRef}>  
+        <div className="btn-prev bg-custom-blue flex items-center justify-center cursor-pointer" ref={prevRef}>  
         </div>
-        <div className="btn-next bg-custom-blue flex items-center justify-center" ref={nextRef}></div>
+        <div className="btn-next bg-custom-blue flex items-center justify-center cursor-pointer" ref={nextRef}></div>
         </div>
           </Swiper>
         </div>

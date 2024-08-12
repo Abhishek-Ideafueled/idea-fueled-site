@@ -22,7 +22,7 @@ const ContactForm = () => {
 
 
           <div className="flex flex-col max-w-[492px] mx-auto md:mx-0">
-            <div className="heading-h2 text-white mb-8">
+            <div className="font-narwaSemiBold font-semibold text-[28px] leading-[35px] md:text-[36px] md:leading-[45px] lg:text-[42px] lg:leading-[52.5px] text-white mb-8">
               Step into the future with confidence
             </div>
             <div className="flex flex-col gap-6">
@@ -68,7 +68,7 @@ const ContactForm = () => {
 
           <div className="p-8 bg-white text-[#0D0D0D] rounded-2xl">
             <form action="" className="flex flex-col gap-6">
-                <h3 className="font-narwaSemiBold text-xl leading-[30px]">Tell us about your requirement, 
+                <h3 className="font-narwaBold text-xl leading-[30px]">Tell us about your requirement, 
                 and we'll get in touch with you soon!</h3>
                 <div className="flex gap-4 sm:h-[53px] flex-col sm:flex-row">
                 <input 

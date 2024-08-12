@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="main-container mx-auto">
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-2 py-6 lg:py-10 items-center justify-between">
-          <div className="text-white font-narwaBold font-bold text-2xl leading-[30px]">
+          <div className="text-white font-narwaBold font-bold text-xl leading-[25px] md:text-2xl md:leading-[30px]">
             Subscribe to our newsletter to <br  className="hidden lg:block"/>
             stay in touch with the latest.
           </div>
@@ -134,19 +134,19 @@ const Footer = () => {
                 <Link to='#'> <li className="font-konsoleRegular">  Marketing</li></Link>
             </ul>
             </div>
-            <div className="footer-links">
+            <div className="footer-links col-span-2 md:col-span-1">
             <ul className="flex flex-col text-white gap-[10px]">
                 <h2 className="font-narwaBold font-bold text-lg leading-[22px] md:text-xl md:leading-[25px]">Contact Us</h2>
                 <Link to='#'> <li className="font-konsoleRegular"><span className="text-[#B3B3B3]">Email:</span> hr@ideafueled.com</li></Link>
                 <Link to='#'> <li className="font-konsoleRegular"> <span className="text-[#B3B3B3]">Call:</span> +91 - 9878452XXX</li></Link>
                  <li className="font-konsoleRegular flex flex-col">
                  <span className="text-[#B3B3B3]">Address <span className="text-custom-blue text-sm"><Link to="#">(view on map)</Link></span></span>
-                Plot No.C, 130, Sector 82,<br /> JLPL Industrial Area, SAS <br /> Nagar, Punjab 140308
+                Plot No.C, 130, Sector 82, JLPL Industrial Area, SAS  Nagar, Punjab 140308
                 </li>
             </ul>
             </div>
         </div>
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 justify-between items-center py-4 lg:py-10 font-konsoleRegular text-sm text-white">
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 sm:gap-0 justify-between items-center py-4 lg:py-10 font-konsoleRegular text-sm text-white">
         <span>©2024 — All Rights Reserved By Idea Fueled</span>
         <span>Privacy Policy   |  Terms & Conditions</span>
         </div>  

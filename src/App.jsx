@@ -15,7 +15,7 @@ import Testimonials from './components/Testimonials'
 function App() {
 
   return (
-    <>
+    <div className='overflow-hidden'>
      <Header/>
      <FirstSection/>
      <AboutUs/>
@@ -27,7 +27,7 @@ function App() {
      <BlogSection/>
      <ContactForm/>
      <Footer/>
-    </>
+    </div>
   )
 }
 
