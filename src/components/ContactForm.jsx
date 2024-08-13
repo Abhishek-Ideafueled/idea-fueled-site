@@ -17,7 +17,7 @@ const ContactForm = () => {
   
 
   return (
-    <div className="w-full bg-contactform-bg">
+    <div className="w-full bg-contactform-bg" id="contactForm">
       <div className="main-container mx-auto py-10 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 

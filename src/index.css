@@ -71,3 +71,8 @@
 .footer-links a:hover{
   color: #0E5EA2;
 }
+
+/* html{
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+} */
