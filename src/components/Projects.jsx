@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="w-full bg-case-studies">
+    <div className="w-full bg-case-studies bg-no-repeat bg-cover">
       <div className="main-container mx-auto py-10 lg:py-20">
         <div className="flex flex-col gap-6 text-center">
           <h2 className="heading-h2 text-white">
