@@ -27,25 +27,25 @@ const Projects = () => {
                 </span>
 
                 <div className="flex flex-wrap gap-2 mt-6">
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       PITCH DECK DESIGN
                     </span>
                   </div>
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       WEBSITE DESIGN
                     </span>
                   </div>
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       SOCIAL MEDIA MARKETING
                     </span>
                   </div>
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       CONTENT WRITING
@@ -78,19 +78,19 @@ const Projects = () => {
                 </span>
 
                 <div className="flex flex-wrap gap-2 mt-6">
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       UX REDESIGN
                     </span>
                   </div>
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       BRANDING MATERIAL
                     </span>
                   </div>
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       WEBSITE DESIGN
@@ -122,26 +122,26 @@ const Projects = () => {
                 </span>
 
                 <div className="flex flex-wrap gap-2 mt-6">
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                      PITCH DECK DESIGN
                     </span>
                   </div>
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                       WEBSITE DESIGN
                     </span>
                   </div>
                   
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                     SOCIAL MEDIA MARKETING
                     </span>
                   </div>
-                  <div className=" h-[40px] bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
+                  <div className=" h-[40px] max-w-max bg-pills-bg text-[#8A989E] flex items-center gap-2 rounded-[50px] py-2 pl-2 pr-4">
                     <FaCircleCheck />
                     <span className="font-konsoleRegular font-semibold text-[12px] leading-[18px]">
                     CONTENT WRITING
