@@ -45,7 +45,7 @@ const ContactForm = () => {
                   Access to dedicated product specialists.
                 </li>
               </ul>
-              <div className="flex gap-4 mt-20">
+              <div className="flex gap-4 mt-4 md:mt-20">
                 <div>
                   <img src="/form-img.png" alt="image for form"  className="rounded-2xl"/>
                 </div>

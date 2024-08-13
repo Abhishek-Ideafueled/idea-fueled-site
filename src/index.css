@@ -63,7 +63,7 @@
   }
   .services-pill
   {
-    @apply bg-[#E5F3FF] text-custom-blue flex items-center px-3 py-2 font-konsoleSemibold text-[10px] leading-[15px] md:text-xs md:leading-[18px] uppercase rounded-[50px];
+    @apply bg-[#E5F3FF] text-custom-blue flex items-center justify-center px-3 py-2 font-konsoleSemibold text-[10px] leading-[15px] md:text-xs md:leading-[18px] uppercase rounded-[50px];
   }
   /* ... */
 }

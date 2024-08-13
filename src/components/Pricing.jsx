@@ -5,7 +5,7 @@ import './Homepage.css';
 
 const Pricing = () => {
   return (
-    <div className="w-full bg-pricing-bg" >
+    <div className="w-full bg-pricing-bg bg-no-repeat bg-cover" >
         <div className="main-container mx-auto py-10 lg:py-20">
             <div className="flex flex-col gap-6 text-center">
                 <h2 className="heading-h2 text-white">Pricing</h2>
